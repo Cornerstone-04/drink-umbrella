@@ -42,7 +42,7 @@ export function Nav() {
           <span className="grid h-9 w-9 place-items-center bg-sun text-ink">
             <UmbrellaMark />
           </span>
-          <span className="font-display text-xl tracking-tight">Umbrella</span>
+          <span className="font-display text-xl font-semibold tracking-tight">Drink Umbrella</span>
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
@@ -91,7 +91,13 @@ export function Nav() {
 
 function UmbrellaMark() {
   return (
-    <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.6">
+    <svg
+      viewBox="0 0 24 24"
+      className="h-5 w-5"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.6"
+    >
       <path d="M2 12a10 10 0 0 1 20 0Z" fill="currentColor" />
       <path d="M12 12v8a2 2 0 0 0 4 0" />
     </svg>

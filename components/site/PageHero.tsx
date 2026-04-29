@@ -16,7 +16,9 @@ export function PageHero({
         {title}
       </h1>
       {intro && (
-        <p className="mt-8 max-w-2xl text-lg leading-relaxed text-ink/70">{intro}</p>
+        <p className="mt-8 max-w-2xl text-lg leading-relaxed text-ink/70">
+          {intro}
+        </p>
       )}
     </section>
   );

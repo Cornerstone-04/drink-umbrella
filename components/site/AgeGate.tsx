@@ -13,17 +13,24 @@ export function AgeGate() {
   if (!open) return null;
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-ink/95 text-bone backdrop-blur-md">
+    <div className="fixed inset-0 z-100 flex items-center justify-center bg-ink/95 text-bone backdrop-blur-md">
       <div className="container-edge w-full max-w-xl text-center fade-up">
-        <p className="font-mono text-xs uppercase tracking-[0.4em] text-sun">Drink Umbrella</p>
-        <h2 className="mt-6 font-display text-5xl md:text-6xl">Are you of legal drinking age?</h2>
+        <p className="font-mono text-xs uppercase tracking-[0.4em] text-sun">
+          Drink Umbrella
+        </p>
+        <h2 className="mt-6 font-display text-5xl md:text-6xl">
+          Are you of legal drinking age?
+        </h2>
         <p className="mt-6 text-sm text-bone/70">
-          You must be of legal drinking age in your country of residence to enter this site.
-          Please drink responsibly.
+          You must be of legal drinking age in your country of residence to
+          enter this site. Please drink responsibly.
         </p>
         <div className="mt-10 flex items-center justify-center gap-4">
           <button
-            onClick={() => { sessionStorage.setItem(KEY, "1"); setOpen(false); }}
+            onClick={() => {
+              sessionStorage.setItem(KEY, "1");
+              setOpen(false);
+            }}
             className="bg-sun px-8 py-4 font-mono text-xs uppercase tracking-[0.3em] text-ink transition hover:bg-sun-deep"
           >
             Yes, enter
