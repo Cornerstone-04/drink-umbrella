@@ -1,0 +1,153 @@
+import Image from "next/image";
+import { PageHero } from "@/components/site/PageHero";
+import { FadeIn } from "@/components/site/FadeIn";
+
+export const metadata = {
+  title: "Our Story — Drink Umbrella",
+  description: "From Bayelsa to the world: Ogogoro's contraband century, the families who kept it alive, and our plan to give it the global stage it deserves.",
+  openGraph: { title: "Our Story — Drink Umbrella", description: "Heritage, family, and the rebirth of Ogogoro." },
+};
+
+const timeline = [
+  { year: "1860s", title: "First stills", body: "Palm-wine distillation spreads through the creeks of the Niger Delta. Recipes pass orally between families, never written down." },
+  { year: "1932", title: "Made illegal", body: "The British colonial Liquor Ordinance bans Ogogoro to protect imported gin sales. Production goes underground, where it stays for thirty years." },
+  { year: "1962", title: "Re-legalised", body: "After independence, Nigeria lifts the ban. Ogogoro returns to the open market, but the stigma of \"illicit gin\" lingers in policy and price." },
+  { year: "2010s", title: "The renaissance", body: "A generation of young Nigerian distillers begins quietly modernising — better stills, cleaner cuts, organic sourcing — and the conversation shifts." },
+  { year: "Today", title: "Umbrella", body: "We launch with a single mission: take Ogogoro premium, internationally, and pay the source communities properly while we do it." },
+];
+
+export default function StoryPage() {
+  return (
+    <>
+      <PageHero
+        eyebrow="Our Story"
+        title={
+          <>
+            In our hometown of Bayelsa,{" "}
+            <em className="font-serif italic font-light text-sun-deep">Ògógóró</em> is the country&rsquo;s homebrew.
+          </>
+        }
+        intro="Outlawed under British colonisation in the 1930s, Ogogoro never disappeared. It was hidden, refined and passed between hands. Today, we bring it back — properly, premium, and on our own terms."
+      />
+
+      <section className="relative h-[60vh] min-h-[420px] overflow-hidden">
+        <Image src="/assets/sugarcane.jpg" alt="Sugarcane field" fill className="object-cover" loading="lazy" sizes="100vw" />
+      </section>
+
+      <section className="container-edge grid gap-16 py-32 md:grid-cols-12">
+        <FadeIn className="md:col-span-5">
+          <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-ink/50">The Misconception</p>
+          <h2 className="mt-4 font-display text-4xl md:text-5xl">
+            Not ethanol. <em className="font-serif italic font-light text-sun-deep">Tradition.</em>
+          </h2>
+        </FadeIn>
+        <FadeIn className="md:col-span-6 md:col-start-7 space-y-5 text-lg text-ink/80" delay={0.15}>
+          <p>
+            There is a misconception, even inside Nigeria, that Ogogoro is a kind of rough,
+            unregulated grain alcohol. It is not. Traditionally, it is distilled from one of
+            three things and three things only: sugarcane, corn, or coconut.
+          </p>
+          <p>
+            Research from UKZN&rsquo;s School of Life Sciences and Nigeria&rsquo;s Federal
+            Institute of Industrial Research has confirmed what village distillers have
+            known for generations &mdash; properly made Ogogoro is loaded with nutrients
+            and a long list of health-supporting compounds. It is the reason the drink
+            forms the base of so many Nigerian herbal medicines.
+          </p>
+          <p>Ogogoro is not the rough end of the market. It is the original.</p>
+        </FadeIn>
+      </section>
+
+      <section className="bg-sun text-ink">
+        <div className="container-edge grid gap-16 py-32 md:grid-cols-2">
+          <FadeIn>
+            <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-ink/60">Our Mission</p>
+            <h2 className="mt-4 font-display text-5xl md:text-6xl text-balance">
+              Honouring roots. <em className="font-serif italic font-light">Hyping it up.</em>
+            </h2>
+          </FadeIn>
+          <FadeIn className="space-y-5 text-lg text-ink/80" delay={0.15}>
+            <p>
+              Many working-class Nigerian families &mdash; like our grandparents &mdash;
+              brew Ogogoro as a means of economic subsistence. It is full-time work, and
+              a cultural inheritance. It has fed generations.
+            </p>
+            <p>
+              Our job is to build a world-class product on top of that inheritance, and
+              to route a real share of every international bottle back to those communities
+              as a proper, contracted wage &mdash; not charity, not tokens.
+            </p>
+            <p className="font-serif text-3xl italic font-light">
+              The economic facets of Ogogoro have been salient throughout Nigerian history.
+              It&rsquo;s time to hype it up.
+            </p>
+          </FadeIn>
+        </div>
+      </section>
+
+      <section className="container-edge py-32">
+        <FadeIn>
+          <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-ink/50">The Long View</p>
+          <h2 className="mt-4 max-w-3xl font-display text-5xl md:text-6xl text-balance">
+            A hundred and sixty years, in five acts.
+          </h2>
+        </FadeIn>
+
+        <ol className="mt-16 grid gap-px bg-ink/10 md:grid-cols-5">
+          {timeline.map((t, i) => (
+            <FadeIn key={t.year} delay={i * 0.08}>
+              <li className="bg-bone p-8 md:p-10">
+                <p className="font-display text-3xl text-sun-deep">{t.year}</p>
+                <h3 className="mt-4 font-display text-xl">{t.title}</h3>
+                <p className="mt-3 text-sm text-ink/70 leading-relaxed">{t.body}</p>
+              </li>
+            </FadeIn>
+          ))}
+        </ol>
+      </section>
+
+      <section className="bg-ink text-bone">
+        <div className="container-edge grid gap-16 py-32 md:grid-cols-12">
+          <FadeIn className="md:col-span-5">
+            <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-sun">The Founders</p>
+            <h2 className="mt-4 font-display text-5xl md:text-6xl">
+              Two cities. <em className="font-serif italic font-light text-sun">One bottle.</em>
+            </h2>
+          </FadeIn>
+          <FadeIn className="md:col-span-6 md:col-start-7 space-y-5 text-lg text-bone/80" delay={0.15}>
+            <p>
+              Umbrella was started by a small group of Nigerian and British creatives
+              between Lagos and London &mdash; people who grew up either drinking Ogogoro
+              quietly at family events or being told, with a wink, that they couldn&rsquo;t
+              have any.
+            </p>
+            <p>
+              We met through music, fashion and tech, and kept noticing the same gap on
+              every back-bar we worked on: the African spirits category was tiny, and almost
+              nothing in it was actually owned, distilled and shipped by Africans.
+            </p>
+            <p>
+              Umbrella is the bottle we wanted to order, designed, distilled and exported
+              by the people whose families have been making it the longest.
+            </p>
+          </FadeIn>
+        </div>
+        <div className="container-edge pb-24">
+          <Image src="/assets/process-still.jpg" alt="Distiller at the still" className="aspect-[16/7] w-full object-cover" width={1920} height={840} loading="lazy" />
+        </div>
+      </section>
+
+      <section className="relative h-[70vh] min-h-[480px] overflow-hidden">
+        <Image src="/assets/lifestyle.jpg" alt="Toast at sunset" fill className="object-cover" loading="lazy" sizes="100vw" />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink/80 to-transparent" />
+        <div className="container-edge relative z-10 flex h-full flex-col justify-end pb-20 text-bone">
+          <FadeIn>
+            <h2 className="max-w-3xl font-display text-5xl md:text-7xl text-balance">
+              From Bayelsa.<br/><em className="font-serif italic font-light text-sun">For the world.</em>
+            </h2>
+          </FadeIn>
+        </div>
+      </section>
+    </>
+  );
+}
