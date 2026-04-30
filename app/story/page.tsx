@@ -199,7 +199,7 @@ export default function StoryPage() {
           <Image
             src="/assets/process-still.jpg"
             alt="Distiller at the still"
-            className="aspect-16/7 w-full object-cover"
+            className="aspect-4/3 md:aspect-video w-full object-cover"
             width={1920}
             height={840}
             loading="lazy"
