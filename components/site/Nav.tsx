@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
+import { ArrowUpRight, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 const links = [
   { to: "/", label: "Home" },
@@ -124,7 +124,7 @@ export function Nav() {
                       <span className="font-display text-4xl">{l.label}</span>
                     </span>
                     <span className="text-ink/30 transition group-hover:text-sun">
-                      ↗
+                      <ArrowUpRight />
                     </span>
 
                     {/* Ghost number on hover */}
