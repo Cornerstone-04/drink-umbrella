@@ -52,18 +52,20 @@ export default function Index() {
             >
               Our Story
             </Link>
-            <Link
-              href="/airegin"
-              className="border border-bone/40 px-8 py-4 font-mono text-xs uppercase tracking-[0.3em] text-bone transition hover:border-sun hover:text-sun"
-            >
-              Airegin
-            </Link>
-            <Link
-              href="/palmsap"
-              className="border border-bone/40 px-8 py-4 font-mono text-xs uppercase tracking-[0.3em] text-bone transition hover:border-sun hover:text-sun"
-            >
-              Palmsap
-            </Link>
+            <div className="flex flex-wrap gap-4">
+              <Link
+                href="/airegin"
+                className="border border-bone/40 px-8 py-4 font-mono text-xs uppercase tracking-[0.3em] text-bone transition hover:border-sun hover:text-sun"
+              >
+                Airegin
+              </Link>
+              <Link
+                href="/palmsap"
+                className="border border-bone/40 px-8 py-4 font-mono text-xs uppercase tracking-[0.3em] text-bone transition hover:border-sun hover:text-sun"
+              >
+                Palmsap
+              </Link>
+            </div>
           </div>
         </div>
       </section>

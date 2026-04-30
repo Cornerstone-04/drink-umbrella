@@ -5,11 +5,11 @@ import { FadeIn } from "@/components/site/FadeIn";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Umbrella Airegen Ogogoro — Drink Umbrella",
+  title: "Umbrella Airegin Ogogoro — Drink Umbrella",
   description:
-    "Umbrella Airegen Ogogoro. The standard bottle. Made in London from northern sugarcane.",
+    "Umbrella Airegin Ogogoro. The standard bottle. Made in London from northern sugarcane.",
   openGraph: {
-    title: "Umbrella Airegen Ogogoro",
+    title: "Umbrella Airegin Ogogoro",
     description: "Made in London. Northern sugarcane.",
   },
 };
@@ -47,7 +47,7 @@ export default function AiregenPage() {
         eyebrow="The Standard Bottle"
         title={
           <>
-            Umbrella Airegen
+            Umbrella Airegin
             <br />
             <em className="font-serif italic font-light text-sun-deep">
               Ogogoro.
@@ -62,7 +62,7 @@ export default function AiregenPage() {
           <FadeIn direction="left">
             <Image
               src="/assets/umbrella_bottle.jpg"
-              alt="Umbrella Airegen bottle"
+              alt="Umbrella Airegin bottle"
               className="mx-auto max-h-[80vh] w-auto"
               width={1280}
               height={1600}

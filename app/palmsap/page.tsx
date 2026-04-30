@@ -32,7 +32,7 @@ const tasting = [
   },
   {
     phase: "Palate",
-    note: "Silkier and rounder than Airegen — the palm sap base gives a natural creaminess. Dried mango, caramelised pineapple and a gentle white-pepper spice through the mid-palate.",
+    note: "Silkier and rounder than Airegin — the palm sap base gives a natural creaminess. Dried mango, caramelised pineapple and a gentle white-pepper spice through the mid-palate.",
   },
   {
     phase: "Finish",
@@ -211,7 +211,7 @@ export default function PalmsapPage() {
           </p>
           <div className="mt-8 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
             <h3 className="font-display text-4xl md:text-5xl">
-              Try Umbrella Airegen{" "}
+              Try Umbrella Airegin{" "}
               <em className="font-serif italic font-light text-sun-deep">
                 Ogogoro.
               </em>
@@ -220,7 +220,7 @@ export default function PalmsapPage() {
               href="/airegen"
               className="shrink-0 bg-ink px-8 py-4 font-mono text-xs uppercase tracking-[0.3em] text-bone hover:bg-sun hover:text-ink"
             >
-              Explore Airegen →
+              Explore Airegin →
             </Link>
           </div>
         </FadeIn>
