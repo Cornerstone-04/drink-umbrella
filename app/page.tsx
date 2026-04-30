@@ -94,7 +94,7 @@ export default function Index() {
         >
           <p>
             Umbrella Ogogoro is a premium organic Nigerian-British spirit
-            inspired by the rich cultural heritage of West Africa &mdash; a
+            inspired by the rich cultural heritage of West Africa, a
             category long owned by foreign houses, finally reclaimed.
           </p>
           <p>
@@ -104,7 +104,7 @@ export default function Index() {
           </p>
           <p>
             Born in the creeks of Bayelsa, finished in Lagos, shipped from
-            London. One bottle, one expression, three cities &mdash; built by a
+            London. One bottle, one expression, three cities; built by a
             small team of Nigerian and British creatives who grew up on either
             side of the Atlantic and decided the African spirits aisle was
             overdue a serious entry.

@@ -34,7 +34,7 @@ const tasting = [
   },
   {
     phase: "Finish",
-    note: "Long, dry and warming. The herbal lift returns at the back of the throat — mint, faint anise — and lingers without ever turning sharp.",
+    note: "Long, dry and warming. The herbal lift returns at the back of the throat: mint, faint anise; and lingers without ever turning sharp.",
   },
 ];
 

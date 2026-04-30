@@ -24,7 +24,7 @@ export default function ContactPage() {
             .
           </>
         }
-        intro="For stockists, press, hospitality, partnerships and community programmes — or just to say hello. We read everything that lands in this inbox."
+        intro="For stockists, press, hospitality, partnerships and community programmes, or just to say hello. We read everything that lands in this inbox."
       />
 
       <section className="container grid gap-px bg-ink/10  md:grid-cols-3 items-stretch">
@@ -61,6 +61,7 @@ export default function ContactPage() {
             </p>
             <a
               href="tel:+447487566216"
+              target="_blank"
               className="mt-2 block font-display text-3xl hover:text-sun-deep"
             >
               +44 7487 566216
@@ -72,6 +73,7 @@ export default function ContactPage() {
             </p>
             <a
               href="mailto:hello@drinkumbrella.co.uk"
+              target="_blank"
               className="mt-2 block font-display text-3xl hover:text-sun-deep"
             >
               hello@drinkumbrella.co.uk

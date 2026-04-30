@@ -45,7 +45,7 @@ const cocktails: Cocktail[] = [
     name: "Umbrella Tonic",
     tagline: "Botanical. Bright. The four o'clock pour.",
     description:
-      "Built like a long G&T but warmer in character — the corn and coconut backbone of the spirit lifts the quinine and pulls the rosemary forward. Three ingredients, one of the best pre-dinner drinks we make.",
+      "Built like a long G&T but warmer in character, the corn and coconut backbone of the spirit lifts the quinine and pulls the rosemary forward. Three ingredients, one of the best pre-dinner drinks we make.",
     ingredients: [
       "50 ml Umbrella Ogogoro",
       "150 ml premium Indian tonic",
@@ -60,7 +60,7 @@ const cocktails: Cocktail[] = [
     name: "Umbrella Screwdriver",
     tagline: "Fresh-pressed orange. Two ice cubes. No fuss.",
     description:
-      "The brunch order. The standing rule is fresh juice or no juice — the spirit is too well made to drown. Use blood orange when in season for a sunset-coloured glass.",
+      "The brunch order. The standing rule is fresh juice or no juice; the spirit is too well made to drown. Use blood orange when in season for a sunset-coloured glass.",
     ingredients: [
       "50 ml Umbrella Ogogoro",
       "120 ml fresh-pressed orange juice",
@@ -75,7 +75,7 @@ const cocktails: Cocktail[] = [
     name: "Umbrella Cosmopolitan",
     tagline: "Cranberry, lime, triple sec. A new classic.",
     description:
-      "A reframed cosmo, shaken hard so the spirit chills properly and the citrus oils bloom. The result is sharper and drier than the 90s version — the way it always should have been.",
+      "A reframed cosmo, shaken hard so the spirit chills properly and the citrus oils bloom. The result is sharper and drier than the 90s version, just the way it always should have been.",
     ingredients: [
       "45 ml Umbrella Ogogoro",
       "20 ml triple sec",
@@ -91,7 +91,7 @@ const cocktails: Cocktail[] = [
     name: "Umbrella Margarita",
     tagline: "Lime, agave, salt rim. West Africa meets Mexico.",
     description:
-      "Ogogoro and agave share more DNA than most spirits — both wild, agricultural, and made by hand. Swap your tequila for a week. You will taste the difference.",
+      "Ogogoro and agave share more DNA than most spirits. Both are wild, agricultural, and made by hand. Swap your tequila for a week. You will taste the difference.",
     ingredients: [
       "50 ml Umbrella Ogogoro",
       "25 ml fresh lime juice",
@@ -107,7 +107,7 @@ const cocktails: Cocktail[] = [
     name: "Umbrella Chapman",
     tagline: "Nigerian classic. Grenadine, bitters, citrus.",
     description:
-      "The drink every Lagos kitchen knows by heart, made with a grown-up's pour. Long, fruity, deeply nostalgic — and the Ogogoro adds the swagger the original was always quietly missing.",
+      "The drink every Lagos kitchen knows by heart, made with a grown-up's pour. Long, fruity, deeply nostalgic, and the Ogogoro adds the swagger the original was always quietly missing.",
     ingredients: [
       "40 ml Umbrella Ogogoro",
       "60 ml Fanta orange",
@@ -139,7 +139,7 @@ const cocktails: Cocktail[] = [
     name: "Umbrella Martini",
     tagline: "Stirred. Lemon twist. Always cold.",
     description:
-      "The acid test. No juice, no sugar — just spirit, vermouth, and very cold ice. If you have ever wondered what the bottle actually tastes like, order this one.",
+      "The acid test. No juice, no sugar, just spirit, vermouth, and very cold ice. If you have ever wondered what the bottle actually tastes like, order this one.",
     ingredients: [
       "60 ml Umbrella Ogogoro",
       "10 ml dry vermouth",
@@ -165,7 +165,7 @@ export default function CocktailsPage() {
             </em>
           </>
         }
-        intro="Our spirit is built to mix. These are the eight serves we keep coming back to — the ones that travelled with us from Bayelsa to Lagos to a kitchen counter in London. Recipes for one, scaled to taste."
+        intro="Our spirit is built to mix. These are the eight serves we keep coming back to. The ones that travelled with us from Bayelsa to Lagos to a kitchen counter in London. Recipes for one, scaled to taste."
       />
 
       <section className="container-edge pb-32 space-y-32">
@@ -244,7 +244,7 @@ export default function CocktailsPage() {
               Before you build a single cocktail, pour a small measure of
               Umbrella Ogogoro into a glass at room temperature. Sit with it.
               The marshmallow, butterscotch and faint herbal lift on the nose
-              are the signature of properly distilled cane — and the anchor
+              are the signature of properly distilled cane, and the anchor
               every recipe on this page is designed to flatter, never disguise.
             </p>
           </FadeIn>

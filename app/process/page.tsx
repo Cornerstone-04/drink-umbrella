@@ -29,7 +29,7 @@ const steps = [
   {
     n: "03",
     title: "Distil",
-    body: "Twin copper-pot stills, batch by batch, with a tight middle cut. We discard the heads and tails generously — yield drops, quality rises. The whole still room runs on rooftop solar.",
+    body: "Twin copper-pot stills, batch by batch, with a tight middle cut. We discard the heads and tails generously, yield drops, quality rises. The whole still room runs on rooftop solar.",
     detail: "Approx. 60% of cane wash is rejected as heads/tails.",
   },
   {
@@ -67,7 +67,7 @@ export default function ProcessPage() {
             fire.
           </>
         }
-        intro="Distillation technology has improved immensely — we use that to elevate, never replace, the traditional methods of Ogogoro. Every step below is run in-house, by a team of fewer than twenty, in Bayelsa and Lagos."
+        intro="Distillation technology has improved immensely, and we use that to elevate, never replace, the traditional methods of Ogogoro. Every step below is run in-house, by a team of fewer than twenty, in Bayelsa and Lagos."
       />
 
       <section className="container-edge pb-24">
@@ -125,7 +125,7 @@ export default function ProcessPage() {
             <p>
               For every bottle sold, we donate a measured volume of clean
               drinking water to the source communities who help us formulate the
-              spirit — routed through local partners, never through us.
+              spirit, routed through local partners and never through us.
             </p>
             <ul className="grid grid-cols-3 gap-6 border-t border-bone/10 pt-8 text-bone">
               {[

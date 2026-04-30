@@ -55,7 +55,7 @@ export default function StoryPage() {
             is the country&rsquo;s homebrew.
           </>
         }
-        intro="Outlawed under British colonisation in the 1930s, Ogogoro never disappeared. It was hidden, refined and passed between hands. Today, we bring it back — properly, premium, and on our own terms."
+        intro="Outlawed under British colonisation in the 1930s, Ogogoro never disappeared. It was hidden, refined and passed between hands. Today, we bring it back properly, premium, and on our own terms."
       />
 
       <section className="relative h-[60vh] min-h-105 overflow-hidden">
@@ -94,7 +94,7 @@ export default function StoryPage() {
           <p>
             Research from UKZN&rsquo;s School of Life Sciences and
             Nigeria&rsquo;s Federal Institute of Industrial Research has
-            confirmed what village distillers have known for generations &mdash;
+            confirmed what village distillers have known for generations:
             properly made Ogogoro is loaded with nutrients and a long list of
             health-supporting compounds. It is the reason the drink forms the
             base of so many Nigerian herbal medicines.
@@ -116,16 +116,15 @@ export default function StoryPage() {
           </FadeIn>
           <FadeIn className="space-y-5 text-lg text-ink/80" delay={0.15}>
             <p>
-              Many working-class Nigerian families &mdash; like our grandparents
-              &mdash; brew Ogogoro as a means of economic subsistence. It is
-              full-time work, and a cultural inheritance. It has fed
-              generations.
+              Many working-class Nigerian families, like our grandparents, brew
+              Ogogoro as a means of economic subsistence. It is full-time work,
+              and a cultural inheritance. It has fed generations.
             </p>
             <p>
               Our job is to build a world-class product on top of that
               inheritance, and to route a real share of every international
-              bottle back to those communities as a proper, contracted wage
-              &mdash; not charity, not tokens.
+              bottle back to those communities as a proper, contracted wage, not
+              charity, not tokens.
             </p>
             <p className="font-serif text-3xl italic font-light">
               The economic facets of Ogogoro have been salient throughout
@@ -180,7 +179,7 @@ export default function StoryPage() {
           >
             <p>
               Umbrella was started by a small group of Nigerian and British
-              creatives between Lagos and London &mdash; people who grew up
+              creatives between Lagos and London, people who grew up
               either drinking Ogogoro quietly at family events or being told,
               with a wink, that they couldn&rsquo;t have any.
             </p>

@@ -3,6 +3,45 @@ import "./globals.css";
 import { Nav } from "@/components/site/Nav";
 import { Footer } from "@/components/site/Footer";
 import { AgeGate } from "@/components/site/AgeGate";
+import { ScrollToTop } from "@/components/site/ScrollToTop";
+import {
+  JetBrains_Mono,
+  Inter,
+  Fraunces,
+  Manrope,
+  Plus_Jakarta_Sans,
+} from "next/font/google";
+import { cn } from "@/lib/utils";
+
+const jetBrainsMono = JetBrains_Mono({
+  variable: "--font-mono",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+});
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  variable: "--font-jakarta",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+});
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
+});
+
+const fraunces = Fraunces({
+  variable: "--font-fraunces",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+});
+
+const manrope = Manrope({
+  variable: "--font-manrope",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+});
 
 export const metadata: Metadata = {
   title: "Drink Umbrella — A Taste of the Premium African Spirit",
@@ -23,10 +62,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={cn(
+        jetBrainsMono.variable,
+        inter.variable,
+        fraunces.variable,
+        manrope.variable,
+        plusJakartaSans.variable,
+      )}
+      data-scroll-behavior="smooth"
+    >
       <body>
         <div className="min-h-screen bg-bone text-ink">
           <AgeGate />
+          <ScrollToTop />
           <Nav />
           <main>{children}</main>
           <Footer />

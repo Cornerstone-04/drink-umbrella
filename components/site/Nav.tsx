@@ -2,13 +2,14 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { Menu, X } from "lucide-react";
+import { motion, AnimatePresence } from "motion/react";
 
 const links = [
   { to: "/story", label: "Our Story" },
   { to: "/process", label: "Process" },
   { to: "/products", label: "Products" },
   { to: "/cocktails", label: "Cocktails" },
-  { to: "/team", label: "Team" },
   { to: "/contact", label: "Contact" },
 ] as const;
 
@@ -27,65 +28,120 @@ export function Nav() {
 
   useEffect(() => setOpen(false), [path]);
 
-  const transparent = isHome && !scrolled;
+  // lock body scroll when menu is open
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
+  const transparent = isHome && !scrolled && !open;
 
   return (
-    <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
-        transparent
-          ? "bg-transparent text-bone"
-          : "bg-bone/90 text-ink backdrop-blur-md border-b border-ink/10"
-      }`}
-    >
-      <div className="container-edge flex h-20 items-center justify-between">
-        <Link href="/" className="flex items-center gap-3">
-          <span className="grid h-9 w-9 place-items-center bg-sun text-ink">
-            <UmbrellaMark />
-          </span>
-          <span className="font-display text-xl font-semibold tracking-tight">Drink Umbrella</span>
-        </Link>
+    <>
+      <header
+        className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
+          transparent
+            ? "bg-transparent text-bone"
+            : "bg-bone/80 text-ink backdrop-blur-md border-b border-ink/10"
+        }`}
+      >
+        <div className="container-edge flex h-20 items-center justify-between">
+          <Link href="/" className="flex items-center gap-3">
+            <span className="grid h-9 w-9 place-items-center bg-sun text-ink">
+              <UmbrellaMark />
+            </span>
+            <span className="font-display text-xl tracking-tight">
+              Drink Umbrella
+            </span>
+          </Link>
 
-        <nav className="hidden items-center gap-8 md:flex">
-          {links.map((l) => (
-            <Link
-              key={l.to}
-              href={l.to}
-              className={`font-mono text-[11px] uppercase tracking-[0.25em] transition hover:text-sun ${
-                path === l.to ? "text-sun" : ""
-              }`}
-            >
-              {l.label}
-            </Link>
-          ))}
-        </nav>
-
-        <button
-          aria-label="Menu"
-          onClick={() => setOpen((v) => !v)}
-          className="md:hidden"
-        >
-          <span className="font-mono text-xs uppercase tracking-[0.3em]">
-            {open ? "Close" : "Menu"}
-          </span>
-        </button>
-      </div>
-
-      {open && (
-        <div className="md:hidden bg-ink text-bone">
-          <nav className="container-edge flex flex-col gap-5 py-8">
+          {/* Desktop nav */}
+          <nav className="hidden items-center gap-8 md:flex">
             {links.map((l) => (
               <Link
                 key={l.to}
                 href={l.to}
-                className={`font-display text-3xl ${path === l.to ? "text-sun" : ""}`}
+                className={`font-mono text-[11px] uppercase tracking-[0.25em] transition hover:text-sun ${
+                  path === l.to ? "text-sun" : ""
+                }`}
               >
                 {l.label}
               </Link>
             ))}
           </nav>
+
+          {/* Mobile hamburger */}
+          <button
+            aria-label={open ? "Close menu" : "Open menu"}
+            onClick={() => setOpen((v) => !v)}
+            className="grid h-10 w-10 place-items-center md:hidden"
+          >
+            {open ? <X size={22} /> : <Menu size={22} />}
+          </button>
         </div>
-      )}
-    </header>
+      </header>
+
+      {/* Full-screen mobile menu */}
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.25 }}
+            className="fixed inset-0 z-40 flex flex-col bg-bone md:hidden"
+          >
+            {/* Spacer for header height */}
+            <div className="h-20 shrink-0" />
+
+            {/* Links */}
+            <nav className="flex flex-col flex-1 divide-y divide-ink/10 overflow-y-auto px-6">
+              {links.map((l, i) => (
+                <motion.div
+                  key={l.to}
+                  initial={{ opacity: 0, y: 16 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{
+                    delay: 0.05 + i * 0.06,
+                    duration: 0.35,
+                    ease: [0.2, 0.7, 0.2, 1],
+                  }}
+                  className="relative"
+                >
+                  <Link
+                    href={l.to}
+                    className={`group flex items-center justify-between py-6 ${
+                      path === l.to ? "text-sun" : "text-ink"
+                    }`}
+                  >
+                    <span className="flex items-center gap-5">
+                      <span className="font-mono text-[10px] tracking-[0.3em] text-ink/30">
+                        0{i + 1}
+                      </span>
+                      <span className="font-display text-4xl">{l.label}</span>
+                    </span>
+                    <span className="text-ink/30 transition group-hover:text-sun">
+                      ↗
+                    </span>
+
+                    {/* Ghost number on hover */}
+                  </Link>
+                </motion.div>
+              ))}
+            </nav>
+
+            {/* Footer detail */}
+            {/*<div className="shrink-0 border-t border-ink/10 px-6 py-6">
+              <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-ink/40">
+                Lagos &middot; London &mdash; Est. Bayelsa
+              </p>
+            </div>*/}
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
   );
 }
 

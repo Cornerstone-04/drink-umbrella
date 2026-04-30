@@ -1,5 +1,13 @@
 import Link from "next/link";
 
+const footer_links = [
+  { name: "Our Story", link: "/story" },
+  { name: "Process", link: "/process" },
+  { name: "Products", link: "/products" },
+  { name: "Cocktails", link: "/cocktails" },
+  { name: "Contact", link: "/contact" },
+];
+
 export function Footer() {
   return (
     <footer className="bg-ink text-bone">
@@ -18,36 +26,13 @@ export function Footer() {
               Visit
             </p>
             <ul className="mt-4 space-y-2 text-sm">
-              <li>
-                <Link href="/story" className="hover:text-sun">
-                  Our Story
-                </Link>
-              </li>
-              <li>
-                <Link href="/process" className="hover:text-sun">
-                  Process
-                </Link>
-              </li>
-              <li>
-                <Link href="/products" className="hover:text-sun">
-                  Products
-                </Link>
-              </li>
-              <li>
-                <Link href="/cocktails" className="hover:text-sun">
-                  Cocktails
-                </Link>
-              </li>
-              <li>
-                <Link href="/team" className="hover:text-sun">
-                  Team
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="hover:text-sun">
-                  Contact
-                </Link>
-              </li>
+              {footer_links.map(({ name, link }) => (
+                <li key={name}>
+                  <Link href={link} className="hover:text-sun">
+                    {name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div>
@@ -55,8 +40,20 @@ export function Footer() {
               Reach
             </p>
             <ul className="mt-4 space-y-2 text-sm">
-              <li>+44 7487 566216</li>
-              <li>hello@drinkumbrella.co.uk</li>
+              <li>
+                <a href="tel:+447487566216" target="_blank" rel="noreferrer">
+                  +44 7487 566216
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:hello@drinkumbrella.co.uk"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  hello@drinkumbrella.co.uk
+                </a>
+              </li>
               <li>Lagos &middot; London</li>
             </ul>
           </div>
