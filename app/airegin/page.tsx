@@ -78,7 +78,7 @@ export default function AiregenPage() {
               and molasses hit the nose while subtle floral and herbal aromas
               show through.&rdquo;
             </p>
-            <dl className="mt-12 grid grid-cols-3 gap-8 border-t border-bone/10 pt-10">
+            <dl className="mt-12 flex flex-row justify-between gap-8 border-t border-bone/10 pt-10">
               {[
                 { k: "Proof", v: "80" },
                 { k: "Made in", v: "London" },
@@ -88,7 +88,7 @@ export default function AiregenPage() {
                   <dt className="font-mono text-[10px] uppercase tracking-[0.3em] text-bone/50">
                     {s.k}
                   </dt>
-                  <dd className="mt-2 font-display text-4xl">{s.v}</dd>
+                  <dd className="mt-2 font-display text-2xl md:text-3xl">{s.v}</dd>
                 </div>
               ))}
             </dl>
