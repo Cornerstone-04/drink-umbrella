@@ -87,7 +87,9 @@ export default function PalmsapPage() {
                   <dt className="font-mono text-[10px] uppercase tracking-[0.3em] text-bone/50">
                     {s.k}
                   </dt>
-                  <dd className="mt-2 font-display text-2xl md:text-3xl">{s.v}</dd>
+                  <dd className="mt-2 font-display text-2xl md:text-3xl">
+                    {s.v}
+                  </dd>
                 </div>
               ))}
             </dl>
@@ -95,7 +97,7 @@ export default function PalmsapPage() {
         </div>
       </section>
 
-      <section className="container-edge py-32">
+      <section className="container-edge py-16 md:py-32">
         <FadeIn>
           <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-ink/50">
             Tasting Flight
@@ -104,10 +106,10 @@ export default function PalmsapPage() {
             Nose. Palate. Finish.
           </h2>
         </FadeIn>
-        <div className="mt-16 grid gap-px bg-ink/10 md:grid-cols-3">
+        <div className="mt-8 md:mt-16 grid gap-px bg-ink/10 md:grid-cols-3">
           {tasting.map((t, i) => (
             <FadeIn key={t.phase} delay={i * 0.1}>
-              <div className="bg-bone p-10 h-full ">
+              <div className="bg-bone py-6 md:p-10 h-full ">
                 <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-sun-deep">
                   {t.phase}
                 </p>
@@ -121,7 +123,7 @@ export default function PalmsapPage() {
       </section>
 
       <section className="bg-sun text-ink">
-        <div className="container-edge grid gap-16 py-24 md:grid-cols-12">
+        <div className="container-edge grid gap-16 py-16 md:py-32 md:grid-cols-12">
           <FadeIn className="md:col-span-5">
             <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-ink/60">
               Technical Sheet
@@ -154,7 +156,7 @@ export default function PalmsapPage() {
         </div>
       </section>
 
-      <section className="container-edge py-32">
+      <section className="container-edge py-16 md:py-32">
         <FadeIn>
           <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-ink/50">
             By Nature
@@ -173,7 +175,7 @@ export default function PalmsapPage() {
           ))}
         </ul>
 
-        <div className="mt-24 grid gap-12 md:grid-cols-2">
+        <div className="mt-12 md:mt-24 grid gap-12 md:grid-cols-2">
           <FadeIn>
             <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-ink/50">
               Pairing
@@ -205,7 +207,7 @@ export default function PalmsapPage() {
           </FadeIn>
         </div>
 
-        <FadeIn className="mt-24 border-t border-ink/10 pt-16">
+        <FadeIn className="mt-12 md:mt-24 border-t border-ink/10 pt-16">
           <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-ink/50">
             Also from Umbrella
           </p>
@@ -218,7 +220,7 @@ export default function PalmsapPage() {
             </h3>
             <Link
               href="/airegen"
-              className="shrink-0 bg-ink px-8 py-4 font-mono text-xs uppercase tracking-[0.3em] text-bone hover:bg-sun hover:text-ink"
+              className="shrink-0 bg-ink px-8 py-4 font-mono text-xs uppercase tracking-[0.3em] text-bone hover:bg-sun hover:text-ink w-fit"
             >
               Explore Airegin →
             </Link>
