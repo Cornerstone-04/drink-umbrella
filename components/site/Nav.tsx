@@ -4,12 +4,12 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
-
 const links = [
   { to: "/", label: "Home" },
   { to: "/story", label: "Our Story" },
   { to: "/process", label: "Process" },
-  { to: "/products", label: "Products" },
+  { to: "/airegin", label: "Airegin" },
+  { to: "/palmsap", label: "Palmsap" },
   { to: "/cocktails", label: "Cocktails" },
   { to: "/contact", label: "Contact" },
 ] as const;
@@ -134,11 +134,11 @@ export function Nav() {
             </nav>
 
             {/* Footer detail */}
-            {/*<div className="shrink-0 border-t border-ink/10 px-6 py-6">
-              <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-ink/40">
-                Lagos &middot; London &mdash; Est. Bayelsa
+            <div className="shrink-0 border-t border-ink/10 px-6 py-6">
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-ink/40">
+                Lagos &middot; London &middot; Los Angeles Est. 2020
               </p>
-            </div>*/}
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

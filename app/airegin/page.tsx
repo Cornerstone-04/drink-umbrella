@@ -5,11 +5,12 @@ import { FadeIn } from "@/components/site/FadeIn";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "The Bottle — Drink Umbrella",
-  description: "Umbrella Ogogoro: 80 proof, organic Nigerian cane spirit.",
+  title: "Umbrella Airegen Ogogoro — Drink Umbrella",
+  description:
+    "Umbrella Airegen Ogogoro. The standard bottle. Made in London from northern sugarcane.",
   openGraph: {
-    title: "Umbrella Ogogoro — The Bottle",
-    description: "80 proof. Batch made. Organic.",
+    title: "Umbrella Airegen Ogogoro",
+    description: "Made in London. Northern sugarcane.",
   },
 };
 
@@ -23,6 +24,7 @@ const facts = [
   "Certified Organic",
   "All Natural",
 ];
+
 const tasting = [
   {
     phase: "Nose",
@@ -34,33 +36,33 @@ const tasting = [
   },
   {
     phase: "Finish",
-    note: "Long, dry and warming. The herbal lift returns at the back of the throat: mint, faint anise; and lingers without ever turning sharp.",
+    note: "Long, dry and warming. A herbal lift at the back of the throat — mint, faint anise — lingers without ever turning sharp.",
   },
 ];
 
-export default function ProductsPage() {
+export default function AiregenPage() {
   return (
     <>
       <PageHero
-        eyebrow="The Bottle"
+        eyebrow="The Standard Bottle"
         title={
           <>
-            Umbrella
+            Umbrella Airegen
             <br />
             <em className="font-serif italic font-light text-sun-deep">
               Ogogoro.
             </em>
           </>
         }
-        intro="A premium organic Nigerian-British spirit. 80 proof. Batch distilled in Bayelsa, finished and bottled in Lagos, shipped from London. One expression, made properly."
+        intro="Made in London. Our flagship expression is distilled from sugarcane sourced in the North — bringing West African distilling tradition into a British craft context."
       />
 
       <section className="bg-ink text-bone">
-        <div className="container-edge grid items-center gap-16 py-12 md:py-24 md:grid-cols-2">
+        <div className="container-edge grid items-center gap-16 py-24 md:grid-cols-2">
           <FadeIn direction="left">
             <Image
               src="/assets/umbrella_bottle.jpg"
-              alt="Umbrella bottle"
+              alt="Umbrella Airegen bottle"
               className="mx-auto max-h-[80vh] w-auto"
               width={1280}
               height={1600}
@@ -79,16 +81,14 @@ export default function ProductsPage() {
             <dl className="mt-12 grid grid-cols-3 gap-8 border-t border-bone/10 pt-10">
               {[
                 { k: "Proof", v: "80" },
-                { k: "Volume", v: "700 ml" },
-                { k: "Origin", v: "Bayelsa" },
+                { k: "Made in", v: "London" },
+                { k: "Cane from", v: "The North" },
               ].map((s) => (
                 <div key={s.k}>
                   <dt className="font-mono text-[10px] uppercase tracking-[0.3em] text-bone/50">
                     {s.k}
                   </dt>
-                  <dd className="mt-2 font-display text-2xl md:text-3xl">
-                    {s.v}
-                  </dd>
+                  <dd className="mt-2 font-display text-4xl">{s.v}</dd>
                 </div>
               ))}
             </dl>
@@ -96,7 +96,7 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      <section className="container-edge py-16 md:py-32">
+      <section className="container-edge py-32">
         <FadeIn>
           <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-ink/50">
             Tasting Flight
@@ -105,10 +105,10 @@ export default function ProductsPage() {
             Nose. Palate. Finish.
           </h2>
         </FadeIn>
-        <div className="mt-8 md:mt-16 grid gap-px bg-ink/10 md:grid-cols-3">
+        <div className="mt-16 grid gap-px bg-ink/10 md:grid-cols-3">
           {tasting.map((t, i) => (
             <FadeIn key={t.phase} delay={i * 0.1}>
-              <div className="bg-bone py-8 md:p-10 h-full">
+              <div className="bg-bone p-10 h-full">
                 <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-sun-deep">
                   {t.phase}
                 </p>
@@ -122,7 +122,7 @@ export default function ProductsPage() {
       </section>
 
       <section className="bg-sun text-ink">
-        <div className="container-edge grid gap-16 py-16 md:py-32 md:grid-cols-12">
+        <div className="container-edge grid gap-16 py-24 md:grid-cols-12">
           <FadeIn className="md:col-span-5">
             <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-ink/60">
               Technical Sheet
@@ -135,8 +135,8 @@ export default function ProductsPage() {
             <dl className="grid grid-cols-2 gap-x-10 gap-y-8 text-ink/85">
               {[
                 ["Category", "Cane spirit / Ogogoro"],
-                ["Base ingredient", "Organic sugarcane (Bayelsa)"],
-                ["Distillation", "Twin copper pot, double distilled"],
+                ["Base ingredient", "Sugarcane — The North"],
+                ["Distilled & bottled", "London, England"],
                 ["ABV", "40% (80 proof)"],
                 ["Sugar per 50 ml", "< 0.1 g"],
                 ["Calories per 50 ml", "108 kcal"],
@@ -147,9 +147,7 @@ export default function ProductsPage() {
                   <dt className="font-mono text-[10px] uppercase tracking-[0.3em] text-ink/55">
                     {k}
                   </dt>
-                  <dd className="mt-2 font-display text-2xl md:text-3xl">
-                    {v}
-                  </dd>
+                  <dd className="mt-2 font-display text-2xl">{v}</dd>
                 </div>
               ))}
             </dl>
@@ -157,7 +155,7 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      <section className="container-edge py-16 md:py-32">
+      <section className="container-edge py-32">
         <FadeIn>
           <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-ink/50">
             By Nature
@@ -166,17 +164,17 @@ export default function ProductsPage() {
             Made the right way.
           </h2>
         </FadeIn>
-        <ul className="mt-6 md:mt-12 grid gap-px bg-ink/10 md:grid-cols-4">
+        <ul className="mt-12 grid gap-px bg-ink/10 md:grid-cols-4">
           {facts.map((f, i) => (
             <FadeIn key={f} delay={i * 0.06}>
-              <li className="bg-bone md:px-6 py-10 text-center">
+              <li className="bg-bone px-6 py-10 text-center">
                 <span className="font-display text-2xl">{f}</span>
               </li>
             </FadeIn>
           ))}
         </ul>
 
-        <div className="mt-12 md:mt-24 grid gap-12 md:grid-cols-2">
+        <div className="mt-24 grid gap-12 md:grid-cols-2">
           <FadeIn>
             <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-ink/50">
               Pairing
@@ -194,9 +192,8 @@ export default function ProductsPage() {
             </p>
             <h3 className="mt-4 font-display text-4xl">In the glass.</h3>
             <p className="mt-6 text-ink/75 leading-relaxed">
-              Pour 35&ndash;50 ml into a small tulip glass at room temperature
-              for the full aromatic picture, or over a single block of ice in a
-              rocks glass to soften the palate. For mixing, see our{" "}
+              Pour 35–50 ml into a small tulip glass at room temperature, or
+              over a single block of ice in a rocks glass. For mixing, see our{" "}
               <Link
                 href="/cocktails"
                 className="border-b border-ink hover:text-sun-deep hover:border-sun-deep"
@@ -207,6 +204,26 @@ export default function ProductsPage() {
             </p>
           </FadeIn>
         </div>
+
+        <FadeIn className="mt-24 border-t border-ink/10 pt-16">
+          <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-ink/50">
+            Also from Umbrella
+          </p>
+          <div className="mt-8 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+            <h3 className="font-display text-4xl md:text-5xl">
+              Try Umbrella Palmsap{" "}
+              <em className="font-serif italic font-light text-sun-deep">
+                Ogogoro.
+              </em>
+            </h3>
+            <Link
+              href="/palmsap"
+              className="shrink-0 bg-ink px-8 py-4 font-mono text-xs uppercase tracking-[0.3em] text-bone hover:bg-sun hover:text-ink"
+            >
+              Explore Palmsap →
+            </Link>
+          </div>
+        </FadeIn>
       </section>
     </>
   );

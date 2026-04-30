@@ -1,12 +1,14 @@
 import Link from "next/link";
 
-const footer_links = [
-  { name: "Our Story", link: "/story" },
-  { name: "Process", link: "/process" },
-  { name: "Products", link: "/products" },
-  { name: "Cocktails", link: "/cocktails" },
-  { name: "Contact", link: "/contact" },
-];
+const links = [
+  { to: "/", label: "Home" },
+  { to: "/story", label: "Our Story" },
+  { to: "/process", label: "Process" },
+  { to: "/airegin", label: "Airegin" },
+  { to: "/palmsap", label: "Palmsap" },
+  { to: "/cocktails", label: "Cocktails" },
+  { to: "/contact", label: "Contact" },
+] as const;
 
 export function Footer() {
   return (
@@ -26,10 +28,10 @@ export function Footer() {
               Visit
             </p>
             <ul className="mt-4 space-y-2 text-sm">
-              {footer_links.map(({ name, link }) => (
-                <li key={name}>
-                  <Link href={link} className="hover:text-sun">
-                    {name}
+              {links.map(({ to, label }) => (
+                <li key={label}>
+                  <Link href={to} className="hover:text-sun">
+                    {label}
                   </Link>
                 </li>
               ))}
@@ -54,7 +56,7 @@ export function Footer() {
                   hello@drinkumbrella.co.uk
                 </a>
               </li>
-              <li>Lagos &middot; London</li>
+              <li>Lagos &middot; London &middot; Los Angeles</li>
             </ul>
           </div>
         </div>

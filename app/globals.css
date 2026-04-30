@@ -43,7 +43,7 @@
     --radius: 0.25rem;
     --ink: oklch(0.16 0.01 60);
     --bone: oklch(0.985 0.012 95);
-    --sun: oklch(78.97% 0.155 73.60);
+    --sun: oklch(78.97% 0.155 73.6);
     --sun-deep: oklch(0.78 0.19 78);
     --background: var(--bone);
     --foreground: var(--ink);
@@ -96,7 +96,8 @@
     * {
         border-color: var(--color-border);
     }
-    html, body{
+    html,
+    body {
         max-width: 100%;
         overflow-x: hidden;
     }
@@ -119,8 +120,12 @@
         letter-spacing: -0.025em;
         text-transform: none;
     }
-    nav{
+    nav {
         max-width: 100vw;
+    }
+    a,button {
+        cursor: pointer;
+        transition-timing-function: linear;
     }
 }
 

@@ -67,7 +67,7 @@ export default function ProcessPage() {
             fire.
           </>
         }
-        intro="Distillation technology has improved immensely, and we use that to elevate, never replace, the traditional methods of Ogogoro. Every step below is run in-house, by a team of fewer than twenty, in Bayelsa and Lagos."
+        intro="Distillation technology has improved immensely, and we use that to elevate, never replace, the traditional methods of Ogogoro. Every step below is run in-house, by a team between Bayelsa, Lagos & London."
       />
 
       <section className="container-edge pb-12 md:pb-24">

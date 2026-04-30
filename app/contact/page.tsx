@@ -25,7 +25,7 @@ const contactFields = [
   },
   {
     label: "Studios",
-    value: "Lagos · London",
+    value: "Lagos · London · Los Angeles ",
   },
   {
     label: "Company",

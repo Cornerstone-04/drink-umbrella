@@ -31,7 +31,7 @@ export default function Index() {
 
         <div className="relative z-10 flex h-full flex-col justify-end pb-20 text-bone container-edge">
           <p className="font-mono text-[11px] uppercase tracking-[0.5em] text-sun fade-up">
-            Umbrella Ogogoro &middot; Est. Bayelsa
+            Umbrella Ogogoro &middot; Est. 2020
           </p>
           <h1 className="mt-6 max-w-5xl font-display text-[clamp(3rem,9vw,9rem)] leading-[0.9] reveal">
             A taste of the
@@ -42,8 +42,8 @@ export default function Index() {
             African spirit.
           </h1>
           <p className="mt-8 max-w-xl text-base text-bone/80 fade-up">
-            Crafted from organically sourced cane, corn and coconut. Born in
-            Bayelsa, bottled for the world.
+            Crafted from organically sourced cane. Born in Bayelsa. Bottled in
+            London for the world.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
@@ -53,10 +53,16 @@ export default function Index() {
               Our Story
             </Link>
             <Link
-              href="/products"
+              href="/airegin"
               className="border border-bone/40 px-8 py-4 font-mono text-xs uppercase tracking-[0.3em] text-bone transition hover:border-sun hover:text-sun"
             >
-              Discover the Bottle
+              Airegin
+            </Link>
+            <Link
+              href="/palmsap"
+              className="border border-bone/40 px-8 py-4 font-mono text-xs uppercase tracking-[0.3em] text-bone transition hover:border-sun hover:text-sun"
+            >
+              Palmsap
             </Link>
           </div>
         </div>
@@ -94,8 +100,8 @@ export default function Index() {
         >
           <p>
             Umbrella Ogogoro is a premium organic Nigerian-British spirit
-            inspired by the rich cultural heritage of West Africa, a
-            category long owned by foreign houses, finally reclaimed.
+            inspired by the rich cultural heritage of West Africa, a category
+            long owned by foreign houses, finally reclaimed.
           </p>
           <p>
             We craft a distinct, organic alcoholic beverage that honours African
@@ -103,11 +109,11 @@ export default function Index() {
             step.
           </p>
           <p>
-            Born in the creeks of Bayelsa, finished in Lagos, shipped from
-            London. One bottle, one expression, three cities; built by a
-            small team of Nigerian and British creatives who grew up on either
-            side of the Atlantic and decided the African spirits aisle was
-            overdue a serious entry.
+            Born in the creeks of Bayelsa, farmed in Kano, distributed from
+            London. One bottle, one expression, three cities; built by a small
+            team of Nigerian and British creatives who grew up on either side of
+            the Atlantic and decided the African spirits aisle was overdue a
+            serious entry.
           </p>
           <Link
             href="/story"
@@ -165,10 +171,10 @@ export default function Index() {
             </dl>
 
             <Link
-              href="/products"
+              href="/airegin"
               className="mt-12 inline-block bg-sun px-8 py-4 font-mono text-xs uppercase tracking-[0.3em] text-ink hover:bg-bone"
             >
-              Explore the Bottle
+              Explore Airegin
             </Link>
           </FadeIn>
         </div>
@@ -190,7 +196,7 @@ export default function Index() {
               by tradition.
             </h2>
             <p className="mt-8 text-ink/70">
-              From organic Bayelsa sugarcane to copper-pot distillation, every
+              From organic Nigerian sugarcane to copper-pot distillation, every
               batch is a tribute to the families that have brewed Ogogoro for
               generations.
             </p>
@@ -297,7 +303,7 @@ export default function Index() {
       <section className="container-edge py-32 text-center">
         <FadeIn>
           <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-ink/50">
-            Lagos &middot; London
+            Lagos &middot; London &middot; Los Angeles
           </p>
           <h2 className="mt-6 font-display text-6xl md:text-8xl text-balance">
             Heritage in{" "}

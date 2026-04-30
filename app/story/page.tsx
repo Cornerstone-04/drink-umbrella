@@ -88,8 +88,7 @@ export default function StoryPage() {
           <p>
             There is a misconception, even inside Nigeria, that Ogogoro is a
             kind of rough, unregulated grain alcohol. It is not. Traditionally,
-            it is distilled from one of three things and three things only:
-            sugarcane, corn, or coconut.
+            it is distilled from sap of a palm tree.
           </p>
           <p>
             Research from UKZN&rsquo;s School of Life Sciences and
@@ -179,9 +178,9 @@ export default function StoryPage() {
           >
             <p>
               Umbrella was started by a small group of Nigerian and British
-              creatives between Lagos and London, people who grew up
-              either drinking Ogogoro quietly at family events or being told,
-              with a wink, that they couldn&rsquo;t have any.
+              creatives between Lagos and London, people who grew up either
+              drinking Ogogoro quietly at family events or being told, with a
+              wink, that they couldn&rsquo;t have any.
             </p>
             <p>
               We met through music, fashion and tech, and kept noticing the same
