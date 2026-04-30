@@ -168,7 +168,7 @@ export default function CocktailsPage() {
         intro="Our spirit is built to mix. These are the eight serves we keep coming back to. The ones that travelled with us from Bayelsa to Lagos to a kitchen counter in London. Recipes for one, scaled to taste."
       />
 
-      <section className="container-edge pb-32 space-y-32">
+      <section className="container-edge pb-16 md:pb-32 space-y-16 md:space-y-32">
         {cocktails.map((c, i) => (
           <FadeIn key={c.n}>
             <article className="grid items-center gap-10 md:gap-16 md:grid-cols-12">
@@ -230,7 +230,7 @@ export default function CocktailsPage() {
       </section>
 
       <section className="bg-ink text-bone">
-        <div className="container-edge grid gap-12 py-24 md:grid-cols-2 md:items-end">
+        <div className="container-edge grid gap-12 py-12 md:py-24 md:grid-cols-2 md:items-end">
           <FadeIn>
             <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-sun">
               House Rules

@@ -12,6 +12,27 @@ export const metadata: Metadata = {
   },
 };
 
+const contactFields = [
+  {
+    label: "Phone",
+    value: "+44 7487 566216",
+    href: "tel:+447487566216",
+  },
+  {
+    label: "Email",
+    value: "hello@drinkumbrella.co.uk",
+    href: "mailto:hello@drinkumbrella.co.uk",
+  },
+  {
+    label: "Studios",
+    value: "Lagos · London",
+  },
+  {
+    label: "Company",
+    value: "The Umbrella Palm Company",
+  },
+];
+
 export default function ContactPage() {
   return (
     <>
@@ -43,7 +64,7 @@ export default function ContactPage() {
           },
         ].map((b, i) => (
           <FadeIn key={b.k} delay={i * 0.08}>
-            <div className="bg-bone py-8 px-16 h-full w-full">
+            <div className="bg-bone py-8 px-6 md:px-16 h-full w-full">
               <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-sun-deep">
                 {b.k}
               </p>
@@ -53,46 +74,30 @@ export default function ContactPage() {
         ))}
       </section>
 
-      <section className="container-edge grid gap-16 pt-8 pb-32 md:grid-cols-12">
+      <section className="container-edge grid gap-16 py-16 md:py-32 md:grid-cols-12">
         <FadeIn className="md:col-span-5 space-y-10">
-          <div>
-            <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-ink/50">
-              Phone
-            </p>
-            <a
-              href="tel:+447487566216"
-              target="_blank"
-              className="mt-2 block font-display text-3xl hover:text-sun-deep"
-            >
-              +44 7487 566216
-            </a>
-          </div>
-          <div>
-            <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-ink/50">
-              Email
-            </p>
-            <a
-              href="mailto:hello@drinkumbrella.co.uk"
-              target="_blank"
-              className="mt-2 block font-display text-3xl hover:text-sun-deep"
-            >
-              hello@drinkumbrella.co.uk
-            </a>
-          </div>
-          <div>
-            <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-ink/50">
-              Studios
-            </p>
-            <p className="mt-2 font-display text-3xl">Lagos &middot; London</p>
-          </div>
-          <div>
-            <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-ink/50">
-              Company
-            </p>
-            <p className="mt-2 font-display text-3xl">
-              The Umbrella Palm Company
-            </p>
-          </div>
+          {contactFields.map((field) => (
+            <div key={field.label}>
+              <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-ink/50">
+                {field.label}
+              </p>
+
+              {field.href ? (
+                <a
+                  href={field.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 block font-display hover:text-sun-deep transition-colors text-2xl md:text-3xl"
+                >
+                  {field.value}
+                </a>
+              ) : (
+                <p className="mt-2 font-display text-2xl md:text-3xl">
+                  {field.value}
+                </p>
+              )}
+            </div>
+          ))}
         </FadeIn>
 
         <FadeIn className="md:col-span-7" delay={0.15}>

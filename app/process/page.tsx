@@ -70,7 +70,7 @@ export default function ProcessPage() {
         intro="Distillation technology has improved immensely, and we use that to elevate, never replace, the traditional methods of Ogogoro. Every step below is run in-house, by a team of fewer than twenty, in Bayelsa and Lagos."
       />
 
-      <section className="container-edge pb-24">
+      <section className="container-edge pb-12 md:pb-24">
         <FadeIn>
           <Image
             src="/assets/process-still.jpg"
@@ -83,11 +83,11 @@ export default function ProcessPage() {
         </FadeIn>
       </section>
 
-      <section className="container-edge pb-32">
+      <section className="container-edge pb-16 md:pb-32">
         <div className="grid gap-px bg-ink/10 md:grid-cols-2 lg:grid-cols-3">
           {steps.map((s, i) => (
             <FadeIn key={s.n} delay={i * 0.07}>
-              <div className="bg-bone p-10 md:p-14 h-full">
+              <div className="bg-bone py-10 md:p-14 h-full">
                 <p className="font-mono text-xs uppercase tracking-[0.4em] text-sun-deep">
                   Step {s.n}
                 </p>
@@ -103,7 +103,7 @@ export default function ProcessPage() {
       </section>
 
       <section className="bg-ink/95 text-bone">
-        <div className="container-edge grid gap-16 py-32 md:grid-cols-2">
+        <div className="container-edge grid gap-16 py-16 md:py-32 md:grid-cols-2">
           <FadeIn>
             <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-sun">
               Corporate Social Responsibility
@@ -137,7 +137,9 @@ export default function ProcessPage() {
                   <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-bone/50">
                     {s.k}
                   </p>
-                  <p className="mt-2 font-display text-3xl">{s.v}</p>
+                  <p className="mt-2 font-display text-2xl md:text-3xl">
+                    {s.v}
+                  </p>
                 </li>
               ))}
             </ul>

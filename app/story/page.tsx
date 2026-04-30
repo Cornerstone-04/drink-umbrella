@@ -69,7 +69,7 @@ export default function StoryPage() {
         />
       </section>
 
-      <section className="container-edge grid gap-16 py-32 md:grid-cols-12">
+      <section className="container-edge grid gap-8 md:gap-16 py-16 md:py-32 md:grid-cols-12">
         <FadeIn className="md:col-span-5">
           <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-ink/50">
             The Misconception
@@ -104,7 +104,7 @@ export default function StoryPage() {
       </section>
 
       <section className="bg-sun text-ink">
-        <div className="container-edge grid gap-16 py-32 md:grid-cols-2">
+        <div className="container-edge grid gap-8 md:gap-16 py-16 md:py-32 md:grid-cols-2">
           <FadeIn>
             <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-ink/60">
               Our Mission
@@ -134,7 +134,7 @@ export default function StoryPage() {
         </div>
       </section>
 
-      <section className="container-edge py-32">
+      <section className="container-edge py-16 md:py-32">
         <FadeIn>
           <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-ink/50">
             The Long View
@@ -144,11 +144,11 @@ export default function StoryPage() {
           </h2>
         </FadeIn>
 
-        <ol className="mt-16 grid gap-px bg-ink/10 md:grid-cols-5 items-stretch">
+        <ol className="mt-8 md:mt-16 grid gap-px bg-ink/10 md:grid-cols-5 items-stretch">
           {" "}
           {timeline.map((t, i) => (
             <FadeIn key={t.year} delay={i * 0.08}>
-              <li className="bg-bone p-8 md:p-10 h-full">
+              <li className="bg-bone px-0 py-8 md:p-10 h-full">
                 <p className="font-display text-3xl text-sun-deep">{t.year}</p>
                 <h3 className="mt-4 font-display text-xl">{t.title}</h3>
                 <p className="mt-3 text-sm text-ink/70 leading-relaxed">
@@ -161,7 +161,7 @@ export default function StoryPage() {
       </section>
 
       <section className="bg-ink text-bone">
-        <div className="container-edge grid gap-16 py-32 md:grid-cols-12">
+        <div className="container-edge grid gap-8 md:gap-16 py-16 md:py-32 md:grid-cols-12">
           <FadeIn className="md:col-span-5">
             <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-sun">
               The Founders

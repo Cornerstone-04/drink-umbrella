@@ -6,6 +6,7 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 
 const links = [
+  { to: "/", label: "Home" },
   { to: "/story", label: "Our Story" },
   { to: "/process", label: "Process" },
   { to: "/products", label: "Products" },

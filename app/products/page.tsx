@@ -56,10 +56,10 @@ export default function ProductsPage() {
       />
 
       <section className="bg-ink text-bone">
-        <div className="container-edge grid items-center gap-16 py-24 md:grid-cols-2">
+        <div className="container-edge grid items-center gap-16 py-12 md:py-24 md:grid-cols-2">
           <FadeIn direction="left">
             <Image
-            src="/assets/umbrella_bottle.jpg"
+              src="/assets/umbrella_bottle.jpg"
               alt="Umbrella bottle"
               className="mx-auto max-h-[80vh] w-auto"
               width={1280}
@@ -86,7 +86,9 @@ export default function ProductsPage() {
                   <dt className="font-mono text-[10px] uppercase tracking-[0.3em] text-bone/50">
                     {s.k}
                   </dt>
-                  <dd className="mt-2 font-display text-4xl">{s.v}</dd>
+                  <dd className="mt-2 font-display text-2xl md:text-3xl">
+                    {s.v}
+                  </dd>
                 </div>
               ))}
             </dl>
@@ -94,7 +96,7 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      <section className="container-edge py-32">
+      <section className="container-edge py-16 md:py-32">
         <FadeIn>
           <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-ink/50">
             Tasting Flight
@@ -103,10 +105,10 @@ export default function ProductsPage() {
             Nose. Palate. Finish.
           </h2>
         </FadeIn>
-        <div className="mt-16 grid gap-px bg-ink/10 md:grid-cols-3">
+        <div className="mt-8 md:mt-16 grid gap-px bg-ink/10 md:grid-cols-3">
           {tasting.map((t, i) => (
             <FadeIn key={t.phase} delay={i * 0.1}>
-              <div className="bg-bone p-10 h-full">
+              <div className="bg-bone py-8 md:p-10 h-full">
                 <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-sun-deep">
                   {t.phase}
                 </p>
@@ -120,7 +122,7 @@ export default function ProductsPage() {
       </section>
 
       <section className="bg-sun text-ink">
-        <div className="container-edge grid gap-16 py-24 md:grid-cols-12">
+        <div className="container-edge grid gap-16 py-16 md:py-32 md:grid-cols-12">
           <FadeIn className="md:col-span-5">
             <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-ink/60">
               Technical Sheet
@@ -145,7 +147,9 @@ export default function ProductsPage() {
                   <dt className="font-mono text-[10px] uppercase tracking-[0.3em] text-ink/55">
                     {k}
                   </dt>
-                  <dd className="mt-2 font-display text-2xl">{v}</dd>
+                  <dd className="mt-2 font-display text-2xl md:text-3xl">
+                    {v}
+                  </dd>
                 </div>
               ))}
             </dl>
@@ -153,7 +157,7 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      <section className="container-edge py-32">
+      <section className="container-edge py-16 md:py-32">
         <FadeIn>
           <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-ink/50">
             By Nature
@@ -162,17 +166,17 @@ export default function ProductsPage() {
             Made the right way.
           </h2>
         </FadeIn>
-        <ul className="mt-12 grid gap-px bg-ink/10 md:grid-cols-4">
+        <ul className="mt-6 md:mt-12 grid gap-px bg-ink/10 md:grid-cols-4">
           {facts.map((f, i) => (
             <FadeIn key={f} delay={i * 0.06}>
-              <li className="bg-bone px-6 py-10 text-center">
+              <li className="bg-bone md:px-6 py-10 text-center">
                 <span className="font-display text-2xl">{f}</span>
               </li>
             </FadeIn>
           ))}
         </ul>
 
-        <div className="mt-24 grid gap-12 md:grid-cols-2">
+        <div className="mt-12 md:mt-24 grid gap-12 md:grid-cols-2">
           <FadeIn>
             <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-ink/50">
               Pairing

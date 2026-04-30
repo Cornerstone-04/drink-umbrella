@@ -17,7 +17,7 @@ export function ContactForm() {
       className="bg-ink p-10 md:p-14 text-bone"
       onSubmit={(e) => { e.preventDefault(); setSent(true); }}
     >
-      <h2 className="font-display text-3xl">Send us a note</h2>
+      <h2 className="font-display text-2xl md:text-3xl">Send us a note</h2>
       {sent ? (
         <p className="mt-10 text-bone/80">Thanks — we&rsquo;ll be in touch shortly.</p>
       ) : (
