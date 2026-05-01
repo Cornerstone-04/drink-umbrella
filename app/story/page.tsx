@@ -1,18 +1,8 @@
 import Image from "next/image";
 import { PageHero } from "@/components/ui/page_hero";
 import { FadeIn } from "@/components/ui/fade_in";
-import { Metadata } from "next";
 import { timeline } from "@/lib/timeline";
 
-export const metadata: Metadata = {
-  title: "Our Story — Drink Umbrella",
-  description:
-    "From Bayelsa to the world: Ogogoro's contraband century, the families who kept it alive, and our plan to give it the global stage it deserves.",
-  openGraph: {
-    title: "Our Story — Drink Umbrella",
-    description: "Heritage, family, and the rebirth of Ogogoro.",
-  },
-};
 
 export default function StoryPage() {
   return (

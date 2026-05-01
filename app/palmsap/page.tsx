@@ -2,18 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { PageHero } from "@/components/ui/page_hero";
 import { FadeIn } from "@/components/ui/fade_in";
-import { Metadata } from "next";
 import { palmsap_facts, palmsap_tasting } from "@/lib/bottles";
-
-export const metadata: Metadata = {
-  title: "Umbrella Palmsap Ogogoro — Drink Umbrella",
-  description:
-    "Umbrella Palmsap Ogogoro. Ultra-limited. 12 bottles per year, tapped from the creeks of Bayelsa.",
-  openGraph: {
-    title: "Umbrella Palmsap Ogogoro",
-    description: "12 bottles per year. Niger Delta. Made in London.",
-  },
-};
 
 export default function PalmsapPage() {
   return (

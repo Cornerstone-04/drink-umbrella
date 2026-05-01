@@ -121,7 +121,7 @@ drink-umbrella-next/
 | `/`          | Home — hero, brand intro, bottle showcase, process teaser, stats, CTA     |
 | `/story`     | Our Story — brand history, Ogogoro timeline, founders                     |
 | `/process`   | Process — six distillation steps, sustainability figures                  |
-| `/airegen`   | Umbrella Airegen Ogogoro — standard bottle, made in London                |
+| `/airegin`   | Umbrella Airegin Ogogoro — standard bottle, made in London                |
 | `/palmsap`   | Umbrella Palmsap Ogogoro — skull bottle, made in Nigeria, 12 bottles/year |
 | `/cocktails` | Eight house cocktail recipes                                              |
 | `/team`      | Founders, partners, and alumni                                            |
@@ -158,7 +158,7 @@ Consistent page header used across all inner pages.
   eyebrow="The Standard Bottle"
   title={
     <>
-      Umbrella Airegen{" "}
+      Umbrella Airegin{" "}
       <em className="font-serif italic font-light">Ogogoro.</em>
     </>
   }
@@ -237,7 +237,7 @@ bun run build
 
 ## Brand Notes
 
-- **Umbrella Airegen Ogogoro** — the standard bottle. Made in London. Sugarcane sourced from the North. _Airegin_ is Nigeria spelled backwards, named after the 1954 Sonny Rollins jazz standard.
+- **Umbrella Airegin Ogogoro** — the standard bottle. Made in London. Sugarcane sourced from the North. _Airegin_ is Nigeria spelled backwards, named after the 1954 Sonny Rollins jazz standard.
 - **Umbrella Palmsap Ogogoro** — the skull bottle. Made in Nigeria. Palm sap tapped from the creeks of Bayelsa. Ultra-limited: 12 bottles per year.
 - Age gate uses `sessionStorage` — verified once per browser session.
 - The mobile menu locks body scroll while open (`document.body.style.overflow = "hidden"`).

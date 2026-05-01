@@ -1,17 +1,7 @@
 import Image from "next/image";
 import { PageHero } from "@/components/ui/page_hero";
 import { FadeIn } from "@/components/ui/fade_in";
-import { Metadata } from "next";
 import { cocktails } from "@/lib/cocktails";
-
-export const metadata: Metadata = {
-  title: "Cocktails — Drink Umbrella",
-  description: "Eight signature serves built around Umbrella Ogogoro.",
-  openGraph: {
-    title: "Umbrella Cocktails",
-    description: "Lemonade, Tonic, Chapman, Margarita, Martini and more.",
-  },
-};
 
 export default function CocktailsPage() {
   return (

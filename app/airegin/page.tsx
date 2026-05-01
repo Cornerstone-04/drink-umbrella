@@ -2,20 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { PageHero } from "@/components/ui/page_hero";
 import { FadeIn } from "@/components/ui/fade_in";
-import { Metadata } from "next";
 import { airegin_facts, airegin_tasting } from "@/lib/bottles";
 
-export const metadata: Metadata = {
-  title: "Umbrella Airegin Ogogoro — Drink Umbrella",
-  description:
-    "Umbrella Airegin Ogogoro. The standard bottle. Made in London from northern sugarcane.",
-  openGraph: {
-    title: "Umbrella Airegin Ogogoro",
-    description: "Made in London. Northern sugarcane.",
-  },
-};
-
-export default function AiregenPage() {
+export default function AireginPage() {
   return (
     <>
       <PageHero

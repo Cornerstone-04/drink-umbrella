@@ -1,17 +1,7 @@
 import { PageHero } from "@/components/ui/page_hero";
 import { FadeIn } from "@/components/ui/fade_in";
 import { ContactForm } from "./ContactForm";
-import { Metadata } from "next";
 import { contactFields } from "@/lib/contacts";
-
-export const metadata: Metadata = {
-  title: "Contact — Drink Umbrella",
-  description: "Get in touch with The Umbrella Palm Company.",
-  openGraph: {
-    title: "Contact — Drink Umbrella",
-    description: "Lagos and London. Stockists, press and partnerships.",
-  },
-};
 
 export default function ContactPage() {
   return (

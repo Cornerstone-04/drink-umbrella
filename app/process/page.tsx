@@ -1,18 +1,7 @@
 import Image from "next/image";
 import { PageHero } from "@/components/ui/page_hero";
 import { FadeIn } from "@/components/ui/fade_in";
-import { Metadata } from "next";
 import { steps } from "@/lib/step";
-
-export const metadata: Metadata = {
-  title: "Our Process — Drink Umbrella",
-  description:
-    "Organically grown cane, slow natural fermentation, copper-pot distillation, solar power.",
-  openGraph: {
-    title: "Our Process — Drink Umbrella",
-    description: "Solar-powered, batch made, organically sourced.",
-  },
-};
 
 export default function ProcessPage() {
   return (

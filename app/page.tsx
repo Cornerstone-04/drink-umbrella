@@ -2,19 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Marquee } from "@/components/ui/marquee";
 import { FadeIn } from "@/components/ui/fade_in";
-import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Drink Umbrella — A Taste of the Premium African Spirit",
-  description:
-    "Umbrella Ogogoro: a premium organic Nigerian-British spirit, crafted from organically sourced cane, corn and coconut.",
-  openGraph: {
-    title: "Drink Umbrella",
-    description: "Heritage. Craft. Sustainability.",
-  },
-};
-
-export default function Index() {
+export default function HomePage() {
   return (
     <>
       <section className="relative h-svh min-h-160 w-full overflow-hidden">
