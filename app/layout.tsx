@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Nav } from "@/components/site/navbar";
-import { Footer } from "@/components/site/footer";
-import { AgeGate } from "@/components/site/age_gate";
-import { ScrollToTop } from "@/components/site/scroll_to_top";
+import { Nav } from "@/components/ui/navbar";
+import { Footer } from "@/components/ui/footer";
+import { AgeGate } from "@/components/ui/age_gate";
+import { ScrollToTop } from "@/components/ui/scroll_to_top";
 import {
   JetBrains_Mono,
   Inter,

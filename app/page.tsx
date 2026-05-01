@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Marquee } from "@/components/site/marquee";
-import { FadeIn } from "@/components/site/fade_in";
+import { Marquee } from "@/components/ui/marquee";
+import { FadeIn } from "@/components/ui/fade_in";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

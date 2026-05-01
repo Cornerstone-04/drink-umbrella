@@ -1,5 +1,5 @@
-import { PageHero } from "@/components/site/page_hero";
-import { FadeIn } from "@/components/site/fade_in";
+import { PageHero } from "@/components/ui/page_hero";
+import { FadeIn } from "@/components/ui/fade_in";
 import { ContactForm } from "./ContactForm";
 import { Metadata } from "next";
 import { contactFields } from "@/lib/contacts";

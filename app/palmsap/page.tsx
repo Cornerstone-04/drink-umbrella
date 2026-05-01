@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { PageHero } from "@/components/site/page_hero";
-import { FadeIn } from "@/components/site/fade_in";
+import { PageHero } from "@/components/ui/page_hero";
+import { FadeIn } from "@/components/ui/fade_in";
 import { Metadata } from "next";
 import { palmsap_facts, palmsap_tasting } from "@/lib/bottles";
 

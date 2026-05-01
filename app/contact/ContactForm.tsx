@@ -1,5 +1,5 @@
 "use client";
-import { Field } from "@/components/site/field";
+import { Field } from "@/components/ui/field";
 import { useState } from "react";
 
 export function ContactForm() {

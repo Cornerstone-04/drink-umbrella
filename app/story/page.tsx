@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { PageHero } from "@/components/site/page_hero";
-import { FadeIn } from "@/components/site/fade_in";
+import { PageHero } from "@/components/ui/page_hero";
+import { FadeIn } from "@/components/ui/fade_in";
 import { Metadata } from "next";
 import { timeline } from "@/lib/timeline";
 
