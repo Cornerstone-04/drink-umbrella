@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { PageHero } from "@/components/site/PageHero";
-import { FadeIn } from "@/components/site/FadeIn";
+import { PageHero } from "@/components/site/page_hero";
+import { FadeIn } from "@/components/site/fade_in";
 import { Metadata } from "next";
+import { airegin_facts, airegin_tasting } from "@/lib/bottles";
 
 export const metadata: Metadata = {
   title: "Umbrella Airegin Ogogoro — Drink Umbrella",
@@ -13,32 +14,6 @@ export const metadata: Metadata = {
     description: "Made in London. Northern sugarcane.",
   },
 };
-
-const facts = [
-  "Vegan Friendly",
-  "Gluten Free",
-  "Low Calorie",
-  "Sustainable",
-  "Low Sugar",
-  "Low Carb",
-  "Certified Organic",
-  "All Natural",
-];
-
-const tasting = [
-  {
-    phase: "Nose",
-    note: "Marshmallow, butterscotch pudding, faint cotton candy, green molasses. A second pass brings out a floral lift, jasmine, white pepper.",
-  },
-  {
-    phase: "Palate",
-    note: "Round and gently sweet on entry, with a clean cane sugar core. Mid palate opens up into baked banana, vanilla pod and a whisper of toasted coconut.",
-  },
-  {
-    phase: "Finish",
-    note: "Long, dry and warming. A herbal lift at the back of the throat, mint, faint anise, lingers without ever turning sharp.",
-  },
-];
 
 export default function AiregenPage() {
   return (
@@ -137,7 +112,7 @@ export default function AiregenPage() {
           </h2>
         </FadeIn>
         <div className="mt-16 grid gap-px bg-ink/10 md:grid-cols-3">
-          {tasting.map((t, i) => (
+          {airegin_tasting.map((t, i) => (
             <FadeIn key={t.phase} delay={i * 0.1}>
               <div className="bg-bone py-6 md:p-10 h-full">
                 <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-sun-deep">
@@ -196,7 +171,7 @@ export default function AiregenPage() {
           </h2>
         </FadeIn>
         <ul className="mt-12 grid gap-px bg-ink/10 md:grid-cols-4">
-          {facts.map((f, i) => (
+          {airegin_facts.map((f, i) => (
             <FadeIn key={f} delay={i * 0.06}>
               <li className="bg-bone px-6 py-10 text-center">
                 <span className="font-display text-2xl">{f}</span>

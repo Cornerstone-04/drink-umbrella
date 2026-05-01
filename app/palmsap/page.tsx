@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { PageHero } from "@/components/site/PageHero";
-import { FadeIn } from "@/components/site/FadeIn";
+import { PageHero } from "@/components/site/page_hero";
+import { FadeIn } from "@/components/site/fade_in";
 import { Metadata } from "next";
+import { palmsap_facts, palmsap_tasting } from "@/lib/bottles";
 
 export const metadata: Metadata = {
   title: "Umbrella Palmsap Ogogoro — Drink Umbrella",
@@ -13,32 +14,6 @@ export const metadata: Metadata = {
     description: "12 bottles per year. Niger Delta. Made in London.",
   },
 };
-
-const facts = [
-  "Vegan Friendly",
-  "Gluten Free",
-  "Low Calorie",
-  "Sustainable",
-  "Low Sugar",
-  "Low Carb",
-  "Certified Organic",
-  "All Natural",
-];
-
-const tasting = [
-  {
-    phase: "Nose",
-    note: "Fresh grass and smouldering bonfire embers open first, giving way to a complex bouquet of earthy, herbaceous notes. Underneath, sweet tropical hints, ripe coconut water and a faint vegetal lift unique to Delta-tapped sap.",
-  },
-  {
-    phase: "Palate",
-    note: "Creamy and smooth on entry. Layered flavours of coconut, vanilla and sweet toffee, cut through by intense black pepper spice and a bright citrus lift. Closer in character to an earthy cachaça than anything else on the market but distinctly its own thing.",
-  },
-  {
-    phase: "Finish",
-    note: "Velvety and long, with a lingering spicy-sweet aftertaste and a whisper of smoke from the open-air tapping process. Warmer and wilder than the standard expression.",
-  },
-];
 
 export default function PalmsapPage() {
   return (
@@ -120,7 +95,7 @@ export default function PalmsapPage() {
           </h2>
         </FadeIn>
         <div className="mt-8 md:mt-16 grid gap-px bg-ink/10 md:grid-cols-3">
-          {tasting.map((t, i) => (
+          {palmsap_tasting.map((t, i) => (
             <FadeIn key={t.phase} delay={i * 0.1}>
               <div className="bg-bone py-6 md:p-10 h-full">
                 <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-sun-deep">
@@ -179,7 +154,7 @@ export default function PalmsapPage() {
           </h2>
         </FadeIn>
         <ul className="mt-12 grid gap-px bg-ink/10 md:grid-cols-4">
-          {facts.map((f, i) => (
+          {palmsap_facts.map((f, i) => (
             <FadeIn key={f} delay={i * 0.06}>
               <li className="bg-bone px-6 py-10 text-center">
                 <span className="font-display text-2xl">{f}</span>

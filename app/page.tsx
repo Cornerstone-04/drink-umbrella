@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Marquee } from "@/components/site/Marquee";
-import { FadeIn } from "@/components/site/FadeIn";
+import { Marquee } from "@/components/site/marquee";
+import { FadeIn } from "@/components/site/fade_in";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -17,7 +17,6 @@ export const metadata: Metadata = {
 export default function Index() {
   return (
     <>
-      {/* Hero */}
       <section className="relative h-svh min-h-160 w-full overflow-hidden">
         <Image
           src="/assets/hero-beach.jpg"
