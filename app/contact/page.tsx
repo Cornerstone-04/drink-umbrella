@@ -56,7 +56,7 @@ export default function ContactPage() {
           },
           {
             k: "Press",
-            v: "Samples, interviews, founder commentary and high-res assets — usually back to you within 48 hours.",
+            v: "Samples, interviews, founder commentary and high-res assets, usually back to you within 48 hours.",
           },
           {
             k: "Partnerships",

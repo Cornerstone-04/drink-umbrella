@@ -118,7 +118,7 @@ export const cocktails: Cocktail[] = [
     name: "Umbrella Russian",
     tagline: "Coffee liqueur, cream, served on the rocks.",
     description:
-      "Our nightcap. The Palmsap spirit gives the drink a clean snap that traditional vodka never quite delivers — silkier on the tongue, longer on the finish.",
+      "Our nightcap. The Palmsap spirit gives the drink a clean snap that traditional vodka never quite delivers, silkier on the tongue, longer on the finish.",
     ingredients: [
       "40 ml Umbrella Palmsap Ogogoro",
       "20 ml coffee liqueur",
