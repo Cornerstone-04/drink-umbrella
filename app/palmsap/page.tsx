@@ -7,10 +7,10 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Umbrella Palmsap Ogogoro — Drink Umbrella",
   description:
-    "Umbrella Palmsap Ogogoro. Made in Nigeria from sap tapped directly from the Niger Delta.",
+    "Umbrella Palmsap Ogogoro. Ultra-limited. 12 bottles per year, tapped from the creeks of Bayelsa.",
   openGraph: {
     title: "Umbrella Palmsap Ogogoro",
-    description: "Made in Nigeria. Niger Delta sap.",
+    description: "12 bottles per year. Niger Delta. Made in London.",
   },
 };
 
@@ -28,15 +28,15 @@ const facts = [
 const tasting = [
   {
     phase: "Nose",
-    note: "Fresh palm sap, toasted coconut, ripe plantain. A wave of tropical sweetness followed by warm vanilla and a faint earthiness from the Delta soil.",
+    note: "Fresh grass and smouldering bonfire embers open first, giving way to a complex bouquet of earthy, herbaceous notes. Underneath, sweet tropical hints, ripe coconut water and a faint vegetal lift unique to Delta-tapped sap.",
   },
   {
     phase: "Palate",
-    note: "Silkier and rounder than Airegin — the palm sap base gives a natural creaminess. Dried mango, caramelised pineapple and a gentle white-pepper spice through the mid-palate.",
+    note: "Creamy and smooth on entry. Layered flavours of coconut, vanilla and sweet toffee, cut through by intense black pepper spice and a bright citrus lift. Closer in character to an earthy cachaça than anything else on the market but distinctly its own thing.",
   },
   {
     phase: "Finish",
-    note: "Medium-long and gently sweet, with lingering palm oil and a clean agricultural snap. Fades slower than the standard expression — warmer and more tropical.",
+    note: "Velvety and long, with a lingering spicy-sweet aftertaste and a whisper of smoke from the open-air tapping process. Warmer and wilder than the standard expression.",
   },
 ];
 
@@ -44,7 +44,7 @@ export default function PalmsapPage() {
   return (
     <>
       <PageHero
-        eyebrow="The Skull Bottle · Made in Nigeria"
+        eyebrow="The Skull Bottle · Made in London"
         title={
           <>
             Umbrella Palmsap
@@ -54,10 +54,23 @@ export default function PalmsapPage() {
             </em>
           </>
         }
-        intro="Tapped from the Niger Delta. Made in Nigeria. Palmsap is our most rooted expression — harvested and distilled at the source, in the creeks where Ogogoro was born."
+        intro="Tapped from the creeks of Bayelsa. Made in London. Just 12 bottles per year, harvested and distilled at the source, in the riverine communities where Ogogoro was born."
       />
 
-      <section className="bg-ink text-bone">
+      {/* Limited edition callout */}
+      <div className="bg-ink text-bone">
+        <div className="container-edge py-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-sun">
+            Ultra Limited Release
+          </p>
+          <p className="font-display text-xl md:text-2xl">
+            Only <span className="text-sun font-bold">12 bottles</span> produced
+            per year.
+          </p>
+        </div>
+      </div>
+
+      <section className="bg-ink text-bone border-t border-bone/10">
         <div className="container-edge grid items-center gap-16 py-24 md:grid-cols-2">
           <FadeIn direction="left">
             <Image
@@ -74,14 +87,14 @@ export default function PalmsapPage() {
               Tasting Notes
             </p>
             <p className="mt-6 font-serif text-3xl md:text-4xl italic font-light leading-snug text-bone/90">
-              &ldquo;Fresh palm sap, toasted coconut and ripe plantain — silky,
-              round and unmistakably of the Delta.&rdquo;
+              &ldquo;Bonfire embers, coconut and black pepper. Creamy, smoky,
+              and unmistakably of the Delta creeks.&rdquo;
             </p>
             <dl className="mt-12 flex flex-row justify-between gap-8 border-t border-bone/10 pt-10">
               {[
                 { k: "Proof", v: "80" },
                 { k: "Made in", v: "Nigeria" },
-                { k: "Sap from", v: "Niger Delta" },
+                { k: "Sap from", v: "Bayelsa" },
               ].map((s) => (
                 <div key={s.k}>
                   <dt className="font-mono text-[10px] uppercase tracking-[0.3em] text-bone/50">
@@ -109,7 +122,7 @@ export default function PalmsapPage() {
         <div className="mt-8 md:mt-16 grid gap-px bg-ink/10 md:grid-cols-3">
           {tasting.map((t, i) => (
             <FadeIn key={t.phase} delay={i * 0.1}>
-              <div className="bg-bone py-6 md:p-10 h-full ">
+              <div className="bg-bone py-6 md:p-10 h-full">
                 <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-sun-deep">
                   {t.phase}
                 </p>
@@ -136,10 +149,10 @@ export default function PalmsapPage() {
             <dl className="grid grid-cols-2 gap-x-10 gap-y-8 text-ink/85">
               {[
                 ["Category", "Palm spirit / Ogogoro"],
-                ["Base ingredient", "Palm sap — Niger Delta"],
-                ["Distilled & bottled", "Nigeria"],
+                ["Base ingredient", "Palm sap"],
+                ["Distilled & bottled", "London, England"],
                 ["ABV", "40% (80 proof)"],
-                ["Sugar per 50 ml", "< 0.2 g"],
+                ["Annual production", "12 bottles"],
                 ["Calories per 50 ml", "110 kcal"],
                 ["Allergens", "None"],
                 ["Suitable for", "Vegan & vegetarian diets"],
@@ -182,9 +195,10 @@ export default function PalmsapPage() {
             </p>
             <h3 className="mt-4 font-display text-4xl">At the table.</h3>
             <p className="mt-6 text-ink/75 leading-relaxed">
-              The palm sap character makes Palmsap a natural partner for Delta
-              cooking — banga soup, grilled catfish, coconut rice. Also
-              exceptional poured cold alongside fresh tropical fruit.
+              The smoky, spicy-sweet character holds its own against bold,
+              heat-forward dishes. Think grilled fish, rich broths, and
+              slow-cooked proteins. Also exceptional neat as an aperitif, or
+              alongside anything charred and salted.
             </p>
           </FadeIn>
           <FadeIn delay={0.1}>
@@ -193,9 +207,9 @@ export default function PalmsapPage() {
             </p>
             <h3 className="mt-4 font-display text-4xl">In the glass.</h3>
             <p className="mt-6 text-ink/75 leading-relaxed">
-              Best served lightly chilled — 10 minutes in the fridge before
-              pouring. Over ice with a squeeze of lime is the house
-              recommendation. For mixing, see our{" "}
+              Best enjoyed neat, this is too rare to dilute. If you must mix, a
+              basil gimlet or a long pour over ice with coconut water is the
+              house recommendation. For more ideas, see our{" "}
               <Link
                 href="/cocktails"
                 className="border-b border-ink hover:text-sun-deep hover:border-sun-deep"
@@ -219,7 +233,7 @@ export default function PalmsapPage() {
               </em>
             </h3>
             <Link
-              href="/airegen"
+              href="/airegin"
               className="shrink-0 bg-ink px-8 py-4 font-mono text-xs uppercase tracking-[0.3em] text-bone hover:bg-sun hover:text-ink w-fit"
             >
               Explore Airegin →

@@ -28,15 +28,15 @@ const facts = [
 const tasting = [
   {
     phase: "Nose",
-    note: "Marshmallow, butterscotch pudding, faint cotton candy, green molasses. A second pass brings out a floral lift — jasmine, white pepper.",
+    note: "Marshmallow, butterscotch pudding, faint cotton candy, green molasses. A second pass brings out a floral lift, jasmine, white pepper.",
   },
   {
     phase: "Palate",
-    note: "Round and gently sweet on entry, with a clean cane-sugar core. Mid-palate opens up into baked banana, vanilla pod and a whisper of toasted coconut.",
+    note: "Round and gently sweet on entry, with a clean cane sugar core. Mid palate opens up into baked banana, vanilla pod and a whisper of toasted coconut.",
   },
   {
     phase: "Finish",
-    note: "Long, dry and warming. A herbal lift at the back of the throat — mint, faint anise — lingers without ever turning sharp.",
+    note: "Long, dry and warming. A herbal lift at the back of the throat, mint, faint anise, lingers without ever turning sharp.",
   },
 ];
 
@@ -54,7 +54,7 @@ export default function AiregenPage() {
             </em>
           </>
         }
-        intro="Made in London. Our flagship expression is distilled from sugarcane sourced in the North — bringing West African distilling tradition into a British craft context."
+        intro="Made in London. Our flagship expression is distilled from sugarcane sourced in the North, bringing West African distilling tradition into a British craft context."
       />
 
       <section className="bg-ink text-bone">
@@ -88,10 +88,41 @@ export default function AiregenPage() {
                   <dt className="font-mono text-[10px] uppercase tracking-[0.3em] text-bone/50">
                     {s.k}
                   </dt>
-                  <dd className="mt-2 font-display text-2xl md:text-3xl">{s.v}</dd>
+                  <dd className="mt-2 font-display text-2xl md:text-3xl">
+                    {s.v}
+                  </dd>
                 </div>
               ))}
             </dl>
+          </FadeIn>
+        </div>
+      </section>
+
+      <section className="container-edge bg-bone text-ink">
+        <div className="grid gap-16 py-16 md:py-32 md:grid-cols-2  border-b border-ink/10">
+          <FadeIn className="" direction="left">
+            <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-ink/60">
+              The Name
+            </p>
+            <h2 className="mt-4 font-display text-5xl md:text-6xl leading-[0.95]">
+              Read it
+              <br />
+              <em className="font-serif italic font-light">backwards.</em>
+            </h2>
+          </FadeIn>
+          <FadeIn direction="right" className="flex items-center" delay={0.15}>
+            <p className="text-xl leading-relaxed text-ink">
+              <em className="font-serif italic font-semibold text-ink">
+                Airegin
+              </em>{" "}
+              is Nigeria, reversed. A deliberate inversion, borrowed from the
+              1962 Sonny Rollins jazz standard of the same name. Rollins wrote
+              it as a love letter to Africa, spelled backwards to make you look
+              twice. We named our spirit after that same instinct: something
+              deeply Nigerian, presented in a way that stops you mid-sentence
+              and makes you ask the question. The answer, like the spirit, is
+              worth the wait.
+            </p>
           </FadeIn>
         </div>
       </section>
@@ -135,7 +166,7 @@ export default function AiregenPage() {
             <dl className="grid grid-cols-2 gap-x-10 gap-y-8 text-ink/85">
               {[
                 ["Category", "Cane spirit / Ogogoro"],
-                ["Base ingredient", "Sugarcane — The North"],
+                ["Base ingredient", "Sugarcane"],
                 ["Distilled & bottled", "London, England"],
                 ["ABV", "40% (80 proof)"],
                 ["Sugar per 50 ml", "< 0.1 g"],

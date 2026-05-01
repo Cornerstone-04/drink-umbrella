@@ -123,9 +123,9 @@
     nav {
         max-width: 100vw;
     }
-    a,button {
-        cursor: pointer;
-        transition-timing-function: linear;
+    a,
+    button {
+        @apply cursor-pointer transition-all ease-linear;
     }
 }
 

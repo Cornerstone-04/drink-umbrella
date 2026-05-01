@@ -32,7 +32,7 @@ const timeline = [
   {
     year: "2010s",
     title: "The renaissance",
-    body: "A generation of young Nigerian distillers begins quietly modernising — better stills, cleaner cuts, organic sourcing — and the conversation shifts.",
+    body: "A generation of young Nigerian distillers begins quietly modernising, raising standards through better stills, cleaner cuts, and oragnic sourcing.",
   },
   {
     year: "Today",
@@ -63,7 +63,7 @@ export default function StoryPage() {
           src="/assets/sugarcane.jpg"
           alt="Sugarcane field"
           fill
-          className="object-cover"
+          className="object-cover aspect-video"
           loading="lazy"
           sizes="100vw"
         />

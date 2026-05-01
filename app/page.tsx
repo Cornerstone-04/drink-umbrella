@@ -30,7 +30,7 @@ export default function Index() {
         <div className="absolute inset-0 bg-linear-to-b from-ink/60 via-ink/20 to-ink/80" />
 
         <div className="relative z-10 flex h-full flex-col justify-end pb-20 text-bone container-edge">
-          <p className="font-mono text-[11px] uppercase tracking-[0.5em] text-sun fade-up">
+          <p className="font-mono text-[11px] uppercase tracking-[0.5em] text-white font-bold! fade-up">
             Umbrella Ogogoro &middot; Est. 2020
           </p>
           <h1 className="mt-6 max-w-5xl font-display text-[clamp(3rem,9vw,9rem)] leading-[0.9] reveal">
@@ -241,9 +241,9 @@ export default function Index() {
               className="md:col-span-6 md:col-start-7 text-ink/80 leading-relaxed"
               delay={0.1}
             >
-              We are a young brand on purpose &mdash; small batches, signed
+              We are a young brand on purpose, producing small batches, signed
               contracts with every farm, and zero diesel in the production
-              chain. The math, today.
+              chain.
             </FadeIn>
           </div>
 
@@ -255,9 +255,9 @@ export default function Index() {
                 sub: "All organic, all contracted",
               },
               {
-                k: "Solar coverage",
+                k: "Solar-powered",
                 v: "100%",
-                sub: "Of distillery operations",
+                sub: "Distillery operations",
               },
               { k: "Batch size", v: "1,200", sub: "Bottles per release" },
               { k: "Water donated", v: "12 L", sub: "Per bottle sold" },

@@ -12,8 +12,26 @@ export type Cocktail = {
 
 export const cocktails: Cocktail[] = [
   {
-    slug: "umbrella-lemonade",
     n: "01",
+    slug: "umbrella-chapman",
+    name: "Umbrella Chapman",
+    tagline: "Nigerian classic. Grenadine, bitters, citrus.",
+    description:
+      "The drink every Lagos kitchen knows by heart, made with a grown-up's pour. Long, fruity, deeply nostalgic, and Airegin adds the swagger the original was always quietly missing.",
+    ingredients: [
+      "40 ml Umbrella Airegin Ogogoro",
+      "60 ml Fanta orange",
+      "60 ml lemonade",
+      "15 ml grenadine",
+      "2 dashes Angostura bitters",
+    ],
+    glass: "Tall pilsner or hurricane glass",
+    garnish: "Cucumber slice, orange wheel, a maraschino cherry",
+    image: "/assets/cocktails/chapman.jpg",
+  },
+  {
+    slug: "umbrella-lemonade",
+    n: "02",
     name: "Umbrella Lemonade",
     tagline: "Sun-soaked. Citrus-forward. Made for the beach.",
     description:
@@ -30,7 +48,7 @@ export const cocktails: Cocktail[] = [
   },
   {
     slug: "umbrella-tonic",
-    n: "02",
+    n: "03",
     name: "Umbrella Tonic",
     tagline: "Botanical. Bright. The four o'clock pour.",
     description:
@@ -45,7 +63,7 @@ export const cocktails: Cocktail[] = [
     image: "/assets/cocktails/tonic.jpg",
   },
   {
-    n: "03",
+    n: "04",
     slug: "umbrella-screwdriver",
     name: "Umbrella Screwdriver",
     tagline: "Fresh-pressed orange. Two ice cubes. No fuss.",
@@ -61,7 +79,7 @@ export const cocktails: Cocktail[] = [
     image: "/assets/cocktails/screwdriver.jpg",
   },
   {
-    n: "04",
+    n: "05",
     slug: "umbrella-cosmopolitan",
     name: "Umbrella Cosmopolitan",
     tagline: "Cranberry, lime, triple sec. A new classic.",
@@ -78,7 +96,7 @@ export const cocktails: Cocktail[] = [
     image: "/assets/cocktails/cosmo.jpg",
   },
   {
-    n: "05",
+    n: "06",
     slug: "umbrella-margarita",
     name: "Umbrella Margarita",
     tagline: "Lime, agave, salt rim. West Africa meets Mexico.",
@@ -93,24 +111,6 @@ export const cocktails: Cocktail[] = [
     glass: "Coupe with a half salt rim",
     garnish: "Thin lime wheel",
     image: "/assets/cocktails/margarita.jpg",
-  },
-  {
-    n: "06",
-    slug: "umbrella-chapman",
-    name: "Umbrella Chapman",
-    tagline: "Nigerian classic. Grenadine, bitters, citrus.",
-    description:
-      "The drink every Lagos kitchen knows by heart, made with a grown-up's pour. Long, fruity, deeply nostalgic, and Airegin adds the swagger the original was always quietly missing.",
-    ingredients: [
-      "40 ml Umbrella Airegin Ogogoro",
-      "60 ml Fanta orange",
-      "60 ml lemonade",
-      "15 ml grenadine",
-      "2 dashes Angostura bitters",
-    ],
-    glass: "Tall pilsner or hurricane glass",
-    garnish: "Cucumber slice, orange wheel, a maraschino cherry",
-    image: "/assets/cocktails/chapman.jpg",
   },
   {
     n: "07",
