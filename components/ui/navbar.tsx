@@ -33,6 +33,10 @@ export function Nav() {
 
   const transparent = isHome && !scrolled && !open;
 
+  const isActive = (href: string) =>
+    href === "/" ? path : path.startsWith(href);
+  const actuve = isActive;
+
   return (
     <>
       <header
@@ -43,10 +47,17 @@ export function Nav() {
         }`}
       >
         <div className="container-edge flex h-20 items-center justify-between">
-          <Link href="/" className="flex items-center gap-3">
-            <span className="grid h-9 w-9 place-items-center bg-sun text-ink">
+          <Link href="/" className="flex items-center gap-2">
+            <span className="grid h-9 w-9 place-items-center items-center text-ink bg-sun">
               <UmbrellaMark />
-              {/*<Image src="/logo.png"/>*/}
+              {/*<Image
+                src="/logo.png"
+                alt=""
+                width={100}
+                height={50}
+                loading="eager"
+                className=" w-auto object-contain"
+              />*/}
             </span>
             <span className="font-display text-xl tracking-tight">
               Drink Umbrella

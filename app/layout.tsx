@@ -69,9 +69,9 @@ export const metadata: Metadata = {
     "Bayelsa distillery",
     "Nigerian British spirit",
   ],
-  authors: [{ name: "The Umbrella Palm Company" }],
-  creator: "The Umbrella Palm Company",
-  publisher: "The Umbrella Palm Company",
+  authors: [{ name: "Drink Umbrella" }],
+  creator: "Drink Umbrella",
+  publisher: "Drink Umbrella",
   alternates: {
     canonical: "https://drinkumbrella.vercel.app",
   },

@@ -15,6 +15,6 @@ export const contactFields = [
   },
   {
     label: "Company",
-    value: "The Umbrella Palm Company",
+    value: "Drink Umbrella",
   },
 ];

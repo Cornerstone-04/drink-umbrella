@@ -1,6 +1,6 @@
 # Drink Umbrella
 
-The official website for **The Umbrella Palm Company** — a premium Nigerian-British spirits brand built around Ogogoro, West Africa's traditional distilled spirit.
+The official website for **Drink Umbrella** — a premium Nigerian-British spirits brand built around Ogogoro, West Africa's traditional distilled spirit.
 
 ---
 
@@ -244,4 +244,4 @@ bun run build
 
 ---
 
-_The Umbrella Palm Company · Lagos · London_
+_Drink Umbrella · Lagos · London_

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact | Drink Umbrella",
-  description: "Get in touch with The Umbrella Palm Company.",
+  description: "Get in touch with Drink Umbrella.",
   keywords: [
     "Drink Umbrella contact",
     "Umbrella Ogogoro stockists",
