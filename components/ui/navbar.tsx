@@ -34,8 +34,7 @@ export function Nav() {
   const transparent = isHome && !scrolled && !open;
 
   const isActive = (href: string) =>
-    href === "/" ? path : path.startsWith(href);
-  const actuve = isActive;
+    href === "/" ? path === "/" : path === href || path.startsWith(href + "/");
 
   return (
     <>
@@ -71,7 +70,7 @@ export function Nav() {
                 key={l.to}
                 href={l.to}
                 className={`font-mono text-[11px] uppercase tracking-[0.25em] transition hover:text-sun ${
-                  path === l.to ? "text-sun" : ""
+                  isActive(l.to) ? "text-sun" : ""
                 }`}
               >
                 {l.label}
@@ -120,7 +119,7 @@ export function Nav() {
                   <Link
                     href={l.to}
                     className={`group flex items-center justify-between py-6 ${
-                      path === l.to ? "text-sun" : "text-ink"
+                      isActive(l.to) ? "text-sun" : "text-ink"
                     }`}
                   >
                     <span className="flex items-center gap-5">
