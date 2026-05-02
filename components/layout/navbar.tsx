@@ -32,9 +32,6 @@ export function Nav() {
 
   const transparent = isHome && !scrolled && !open;
 
-  const handleScrollToTop = () =>
-    window.scrollTo({ top: 0, behavior: "smooth" });
-
   const isActive = (href: string) =>
     href === "/" ? path === "/" : path === href || path.startsWith(href + "/");
 
@@ -48,11 +45,7 @@ export function Nav() {
         }`}
       >
         <div className="container-edge flex h-20 items-center justify-between">
-          <Link
-            href="/"
-            onClick={handleScrollToTop}
-            className="flex items-center gap-2"
-          >
+          <Link href="/" className="flex items-center gap-2">
             <span className="grid h-9 w-9 place-items-center items-center text-ink bg-sun">
               <UmbrellaMark />
               {/*<Image

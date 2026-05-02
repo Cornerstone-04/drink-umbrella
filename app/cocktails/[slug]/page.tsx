@@ -9,7 +9,7 @@ import {
   IngredientList,
   MethodSteps,
 } from "@/components/cocktails";
-import { FadeIn } from "@/components/ui/fade_in";
+import { FadeIn } from "@/components/ui/fade-in";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
 interface Props {

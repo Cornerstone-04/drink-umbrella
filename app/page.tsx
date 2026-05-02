@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Marquee } from "@/components/ui/marquee";
-import { FadeIn } from "@/components/ui/fade_in";
+import { FadeIn } from "@/components/ui/fade-in";
 import { BsArrowRight } from "react-icons/bs";
 
 export default function HomePage() {

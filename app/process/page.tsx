@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { PageHero } from "@/components/ui/page_hero";
-import { FadeIn } from "@/components/ui/fade_in";
+import { PageHero } from "@/components/ui/page-hero";
+import { FadeIn } from "@/components/ui/fade-in";
 import { steps } from "@/data/step";
 
 export default function ProcessPage() {

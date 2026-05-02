@@ -1,6 +1,7 @@
 "use client";
-import { Field } from "@/components/ui/field";
+
 import { useState } from "react";
+import { Field } from "../ui/field";
 
 export function ContactForm() {
   const [sent, setSent] = useState(false);

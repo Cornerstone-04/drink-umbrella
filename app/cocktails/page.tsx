@@ -1,4 +1,4 @@
-import { PageHero } from "@/components/ui/page_hero";
+import { PageHero } from "@/components/ui/page-hero";
 import { cocktails } from "@/data/cocktails";
 import { CocktailGrid, HouseRules } from "@/components/cocktails";
 

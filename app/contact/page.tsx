@@ -1,6 +1,6 @@
-import { PageHero } from "@/components/ui/page_hero";
-import { FadeIn } from "@/components/ui/fade_in";
-import { ContactForm } from "./ContactForm";
+import { PageHero } from "@/components/ui/page-hero";
+import { FadeIn } from "@/components/ui/fade-in";
+import { ContactForm } from "@/components/contacts/contact-form";
 import { contactFields } from "@/data/contacts";
 
 export default function ContactPage() {
