@@ -57,10 +57,10 @@ export default function CocktailsPage() {
         </div>
       </section>
 
-      <section className="bg-ink text-bone">
+      <section className="bg-sun text-ink">
         <div className="container-edge grid gap-12 py-12 md:py-32 md:grid-cols-2 md:items-end">
           <FadeIn>
-            <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-sun">
+            <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-ink">
               House Rules
             </p>
             <h2 className="mt-4 font-display text-5xl md:text-6xl">
@@ -68,7 +68,7 @@ export default function CocktailsPage() {
             </h2>
           </FadeIn>
           <FadeIn delay={0.15}>
-            <p className="text-bone/75 leading-relaxed">
+            <p className="text-ink/75 leading-relaxed">
               Before you build a single cocktail, pour a small measure of
               Umbrella Ogogoro into a glass at room temperature. Sit with it.
               The marshmallow, butterscotch and faint herbal lift on the nose
