@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Marquee } from "@/components/ui/marquee";
 import { FadeIn } from "@/components/ui/fade_in";
+import { BsArrowRight } from "react-icons/bs";
 
 export default function HomePage() {
   return (
@@ -107,9 +108,9 @@ export default function HomePage() {
           </p>
           <Link
             href="/story"
-            className="inline-block border-b border-ink pb-1 font-mono text-xs uppercase tracking-[0.3em] hover:text-sun-deep hover:border-sun-deep"
+            className="inline-flex items-center gap-2 border-b border-ink pb-1 font-mono text-xs uppercase tracking-[0.3em] hover:text-sun-deep hover:border-sun-deep"
           >
-            Read our story &rarr;
+            Read our story <BsArrowRight />
           </Link>
         </FadeIn>
       </section>
@@ -162,9 +163,9 @@ export default function HomePage() {
 
             <Link
               href="/airegin"
-              className="mt-12 inline-block bg-sun px-8 py-4 font-mono text-xs uppercase tracking-[0.3em] text-ink hover:bg-bone"
+              className="mt-12 inline-flex items-center gap-2 bg-sun px-8 py-4 font-mono text-xs uppercase tracking-[0.3em] text-ink hover:bg-bone"
             >
-              Explore Airegin
+              Explore Airegin <BsArrowRight />
             </Link>
           </FadeIn>
         </div>
@@ -192,9 +193,9 @@ export default function HomePage() {
             </p>
             <Link
               href="/process"
-              className="mt-8 inline-block border-b border-ink pb-1 font-mono text-xs uppercase tracking-[0.3em] hover:text-sun-deep"
+              className="mt-8 inline-flex items-center gap-2 border-b border-ink pb-1 font-mono text-xs uppercase tracking-[0.3em] hover:text-sun-deep hover:border-sun-deep"
             >
-              See the process &rarr;
+              See the process <BsArrowRight />
             </Link>
           </FadeIn>
           <FadeIn className="md:col-span-7" delay={0.15}>

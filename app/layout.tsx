@@ -3,7 +3,7 @@ import "./globals.css";
 import { Nav } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { AgeGate } from "@/components/ui/age_gate";
-import { ScrollToTop } from "@/components/ui/scroll_to_top";
+import { ScrollToTop } from "@/components/ui/scroll-to-top";
 import {
   JetBrains_Mono,
   Inter,

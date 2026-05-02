@@ -34,7 +34,12 @@ export function Footer() {
             </p>
             <ul className="mt-4 space-y-2 text-sm">
               <li>
-                <a href="tel:+447487566216" target="_blank" rel="noreferrer">
+                <a
+                  href="tel:+447487566216"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-sun"
+                >
                   +44 7487 566216
                 </a>
               </li>
@@ -43,6 +48,7 @@ export function Footer() {
                   href="mailto:hello@drinkumbrella.co.uk"
                   target="_blank"
                   rel="noreferrer"
+                  className="hover:text-sun"
                 >
                   hello@drinkumbrella.co.uk
                 </a>
@@ -53,8 +59,8 @@ export function Footer() {
         </div>
         <div className="mt-16 flex flex-col gap-4 border-t border-bone/10 pt-8 md:flex-row md:items-center md:justify-between">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-bone/50">
-            &copy; {new Date().getFullYear()} Drink Umbrella. All
-            rights reserved.
+            &copy; {new Date().getFullYear()} Drink Umbrella. All rights
+            reserved.
           </p>
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-bone/50">
             Please enjoy responsibly &middot; 18+

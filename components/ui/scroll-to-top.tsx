@@ -1,4 +1,5 @@
 "use client";
+
 import { useEffect, useState } from "react";
 import { BsArrowUp } from "react-icons/bs";
 
@@ -11,9 +12,12 @@ export function ScrollToTop() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const handleScrollToTop = () =>
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
   return (
     <button
-      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      onClick={handleScrollToTop}
       aria-label="Scroll to top"
       className={`fixed bottom-8 right-8 z-50 grid h-12 w-12 place-items-center bg-ink text-bone shadow-lg transition-all duration-300 hover:bg-sun hover:text-ink cursor-pointer ${
         visible

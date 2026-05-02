@@ -19,7 +19,7 @@ export default function CocktailsPage() {
         intro="Our spirit is built to mix. These are the eight serves we keep coming back to. The ones that travelled with us from Bayelsa to Lagos to a kitchen counter in London. Recipes for one, scaled to taste."
       />
 
-      <section className="container-edge pb-32">
+      <section className="container-edge pb-16 md:pb-32">
         <CocktailGrid cocktails={cocktails} />
       </section>
 

@@ -62,7 +62,7 @@ export default async function CocktailDetail({ params }: Props) {
       <section className="container-edge pt-32 pb-8">
         <Link
           href="/cocktails"
-          className="font-mono text-[11px] uppercase tracking-[0.3em] text-ink/60 hover:text-ink inline-flex items-center gap-2"
+          className="font-mono text-[11px] uppercase tracking-[0.3em] text-ink hover:text-sun inline-flex items-center gap-2"
         >
           <BsArrowLeft /> All cocktails
         </Link>
@@ -137,10 +137,9 @@ export default async function CocktailDetail({ params }: Props) {
               </p>
               <Link
                 href={bottleHref}
-                className="mt-6 inline-block bg-sun px-6 py-3 font-mono text-[11px] uppercase tracking-[0.3em] text-ink hover:bg-bone"
+                className="mt-6 bg-sun px-6 py-3 font-mono text-[11px] uppercase tracking-[0.3em] text-ink hover:bg-bone inline-flex gap-2 items-center"
               >
-                Explore Umbrella {cocktail.bottle}{" "}
-                <BsArrowRight className="inline" />
+                Explore Umbrella {cocktail.bottle} <BsArrowRight />
               </Link>
             </FadeIn>
           </div>

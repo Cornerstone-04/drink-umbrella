@@ -3,6 +3,7 @@ import Link from "next/link";
 import { PageHero } from "@/components/ui/page_hero";
 import { FadeIn } from "@/components/ui/fade_in";
 import { palmsap_facts, palmsap_tasting } from "@/data/bottles";
+import { BsArrowRight } from "react-icons/bs";
 
 export default function PalmsapPage() {
   return (
@@ -35,7 +36,7 @@ export default function PalmsapPage() {
       </div>
 
       <section className="bg-ink text-bone border-t border-bone/10">
-        <div className="container-edge grid items-center gap-16 py-24 md:grid-cols-2">
+        <div className="container-edge grid items-center gap-16 py-12 md:py-24 md:grid-cols-2">
           <FadeIn direction="left">
             <Image
               src="/assets/umbrella_skull.jpg"
@@ -198,9 +199,9 @@ export default function PalmsapPage() {
             </h3>
             <Link
               href="/airegin"
-              className="shrink-0 bg-ink px-8 py-4 font-mono text-xs uppercase tracking-[0.3em] text-bone hover:bg-sun hover:text-ink w-fit"
+              className="shrink-0 bg-ink px-8 py-4 font-mono text-xs uppercase tracking-[0.3em] text-bone hover:bg-sun hover:text-ink w-fit inline-flex items-center gap-2"
             >
-              Explore Airegin →
+              Explore Airegin <BsArrowRight className="inline" />
             </Link>
           </div>
         </FadeIn>
