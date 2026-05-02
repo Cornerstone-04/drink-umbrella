@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Nav } from "@/components/ui/navbar";
-import { Footer } from "@/components/ui/footer";
+import { Nav } from "@/components/layout/navbar";
+import { Footer } from "@/components/layout/footer";
 import { AgeGate } from "@/components/ui/age_gate";
 import { ScrollToTop } from "@/components/ui/scroll_to_top";
 import {

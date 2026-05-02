@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { links } from "@/data/links";
-import { UmbrellaMark } from "./umbrella-mark";
+import { UmbrellaMark } from "../ui/umbrella-mark";
 import Image from "next/image";
 
 export function Nav() {

@@ -1,7 +1,6 @@
 "use client";
+import { KEY } from "@/data/constants";
 import { useEffect, useState } from "react";
-
-const KEY = "umbrella-age-verified";
 
 export function AgeGate() {
   const [open, setOpen] = useState(false);

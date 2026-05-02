@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { ArrowUp } from "lucide-react";
+import { BsArrowUp } from "react-icons/bs";
 
 export function ScrollToTop() {
   const [visible, setVisible] = useState(false);
@@ -21,7 +21,7 @@ export function ScrollToTop() {
           : "opacity-0 translate-y-4 pointer-events-none"
       }`}
     >
-      <ArrowUp size={18} />
+      <BsArrowUp size={18} />
     </button>
   );
 }
