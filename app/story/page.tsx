@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { PageHero } from "@/components/ui/page_hero";
 import { FadeIn } from "@/components/ui/fade_in";
-import { timeline } from "@/lib/timeline";
+import { timeline } from "@/data/timeline";
 
 
 export default function StoryPage() {

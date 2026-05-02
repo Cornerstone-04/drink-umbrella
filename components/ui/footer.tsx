@@ -1,4 +1,4 @@
-import { links } from "@/lib/links";
+import { links } from "@/data/links";
 import Link from "next/link";
 
 export function Footer() {

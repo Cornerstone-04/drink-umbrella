@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { PageHero } from "@/components/ui/page_hero";
 import { FadeIn } from "@/components/ui/fade_in";
-import { airegin_facts, airegin_tasting } from "@/lib/bottles";
+import { airegin_facts, airegin_tasting } from "@/data/bottles";
 
 export default function AireginPage() {
   return (

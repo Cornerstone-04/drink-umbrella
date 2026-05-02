@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { PageHero } from "@/components/ui/page_hero";
 import { FadeIn } from "@/components/ui/fade_in";
-import { palmsap_facts, palmsap_tasting } from "@/lib/bottles";
+import { palmsap_facts, palmsap_tasting } from "@/data/bottles";
 
 export default function PalmsapPage() {
   return (

@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
-import { links } from "@/lib/links";
+import { links } from "@/data/links";
 
 export function Nav() {
   const [scrolled, setScrolled] = useState(false);

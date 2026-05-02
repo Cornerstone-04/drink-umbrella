@@ -1,7 +1,7 @@
 import { PageHero } from "@/components/ui/page_hero";
 import { FadeIn } from "@/components/ui/fade_in";
 import { ContactForm } from "./ContactForm";
-import { contactFields } from "@/lib/contacts";
+import { contactFields } from "@/data/contacts";
 
 export default function ContactPage() {
   return (
