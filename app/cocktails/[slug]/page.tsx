@@ -190,12 +190,12 @@ export default async function CocktailDetail({ params }: Props) {
       </section>
 
       {/* Prev / Next navigation */}
-      <section className="container-edge grid gap-px bg-ink/10 md:grid-cols-2">
+      <section className="container-edge grid gap-px md:grid-cols-2">
         <Link href={`/cocktails/${prev.slug}`} className="group bg-bone p-8">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-ink/50">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-ink/50 group-hover:text-sun-deep transition-all ease-linear">
             ← Previous
           </p>
-          <p className="mt-3 font-display text-3xl group-hover:text-sun-deep">
+          <p className="mt-3 font-display text-3xl group-hover:text-sun-deep transition-all ease-linear">
             {prev.name}
           </p>
         </Link>
@@ -203,10 +203,10 @@ export default async function CocktailDetail({ params }: Props) {
           href={`/cocktails/${next.slug}`}
           className="group bg-bone p-8 text-right"
         >
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-ink/50">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-ink/50 group-hover:text-sun-deep transition-all ease-linear">
             Next →
           </p>
-          <p className="mt-3 font-display text-3xl group-hover:text-sun-deep">
+          <p className="mt-3 font-display text-3xl group-hover:text-sun-deep transition-all ease-linear">
             {next.name}
           </p>
         </Link>

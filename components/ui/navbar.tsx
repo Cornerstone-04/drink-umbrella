@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { links } from "@/data/links";
+import { UmbrellaMark } from "./umbrella-mark";
+import Image from "next/image";
 
 export function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -44,6 +46,7 @@ export function Nav() {
           <Link href="/" className="flex items-center gap-3">
             <span className="grid h-9 w-9 place-items-center bg-sun text-ink">
               <UmbrellaMark />
+              {/*<Image src="/logo.png"/>*/}
             </span>
             <span className="font-display text-xl tracking-tight">
               Drink Umbrella
@@ -135,20 +138,5 @@ export function Nav() {
         )}
       </AnimatePresence>
     </>
-  );
-}
-
-function UmbrellaMark() {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      className="h-5 w-5"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.6"
-    >
-      <path d="M2 12a10 10 0 0 1 20 0Z" fill="currentColor" />
-      <path d="M12 12v8a2 2 0 0 0 4 0" />
-    </svg>
   );
 }
