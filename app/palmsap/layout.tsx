@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://drinkumbrella.vercel.app/palmsap",
     images: [
       {
-        url: "/palmsap-opengraph.png",
+        url: "https://drinkumbrella.vercel.app/palmsap-og-image.png",
         width: 1200,
         height: 630,
         alt: "Umbrella Palmsap Ogogoro | Drink Umbrella",

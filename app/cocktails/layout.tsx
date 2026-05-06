@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     url: "https://drinkumbrella.vercel.app/cocktails",
     images: [
       {
-        url: "/cocktails-opengraph.png",
+        url: "https://drinkumbrella.vercel.app/cocktails-og-image.png",
         width: 1200,
         height: 630,
         alt: "Eight signature cocktails built around Umbrella Ogogoro.",

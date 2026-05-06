@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     url: "https://drinkumbrella.vercel.app/airegin",
     images: [
       {
-        url: "/airegin-opengraph.png",
+        url: "https://drinkumbrella.vercel.app/airegin-og-image.png",
         width: 1200,
         height: 630,
         alt: "Umbrella Airegin Ogogoro | Drink Umbrella",
