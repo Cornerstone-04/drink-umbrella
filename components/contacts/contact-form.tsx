@@ -16,7 +16,7 @@ export function ContactForm() {
       <h2 className="font-display text-2xl md:text-3xl">Send us a note</h2>
       {sent ? (
         <p className="mt-10 text-bone/80">
-          Thanks — we&rsquo;ll be in touch shortly.
+          Thank you! We&rsquo;ll be in touch shortly.
         </p>
       ) : (
         <div className="mt-8 space-y-6">

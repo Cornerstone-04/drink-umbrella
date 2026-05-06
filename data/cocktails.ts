@@ -141,7 +141,7 @@ export const cocktails: Cocktail[] = [
     name: "Umbrella Screwdriver",
     tagline: "Fresh-pressed orange. Two ice cubes. No fuss.",
     description:
-      "The brunch order. The standing rule is fresh juice or no juice — the spirit is too well made to drown.",
+      "The brunch order. The standing rule is fresh juice or no juice. The spirit is too well made to drown.",
     longStory:
       "Use blood orange when in season for a sunset-coloured glass. This is the drink that converts people who think they don't like spirits neat.",
     ingredients: [

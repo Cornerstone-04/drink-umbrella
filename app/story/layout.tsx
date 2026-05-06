@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Our Story — Drink Umbrella",
+  title: "Our Story | Drink Umbrella",
   description:
     "The heritage, family and economic history behind our premium Nigerian spirit, Ogogoro. From Bayelsa to the world.",
   keywords: [
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://drinkumbrella.vercel.app/story" },
   openGraph: {
-    title: "Our Story — Drink Umbrella",
+    title: "Our Story | Drink Umbrella",
     description:
       "Outlawed in 1932. Reclaimed today. The story of Ogogoro and the brand bringing it to the world.",
     url: "https://drinkumbrella.vercel.app/story",

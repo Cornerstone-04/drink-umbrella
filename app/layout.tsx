@@ -44,8 +44,9 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://drinkumbrella.vercel.app"),
   title: {
-    default: "Drink Umbrella — A Taste of the Premium African Spirit",
+    default: "Drink Umbrella | A Taste of the Premium African Spirit",
     template: "%s | Drink Umbrella",
   },
   description:
@@ -76,7 +77,7 @@ export const metadata: Metadata = {
     canonical: "https://drinkumbrella.vercel.app",
   },
   openGraph: {
-    title: "Drink Umbrella — A Taste of the Premium African Spirit",
+    title: "Drink Umbrella | A Taste of the Premium African Spirit",
     description:
       "Umbrella Ogogoro is a premium organic Nigerian-British spirit, crafted from organically sourced cane and palm sap. Born in Bayelsa, made in London and Nigeria.",
     type: "website",
@@ -85,10 +86,10 @@ export const metadata: Metadata = {
     locale: "en_GB",
     images: [
       {
-        url: "/assets/hero-beach.jpg",
+        url: "https://drinkumbrella.vercel.app/og-image-v2.png",
         width: 1200,
         height: 630,
-        alt: "Drink Umbrella — A Taste of the Premium African Spirit",
+        alt: "Drink Umbrella | A Taste of the Premium African Spirit",
       },
     ],
   },
@@ -96,10 +97,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@drinkumbrella",
     creator: "@drinkumbrella",
-    title: "Drink Umbrella — A Taste of the Premium African Spirit",
+    title: "Drink Umbrella | A Taste of the Premium African Spirit",
     description:
       "Umbrella Ogogoro is a premium organic Nigerian-British spirit, crafted from organically sourced cane and palm sap. Born in Bayelsa, made in London and Nigeria.",
-    images: ["https://drinkumbrella.vercel.app/assets/hero-beach.jpg"],
+    images: ["https://drinkumbrella.vercel.app/og-image-v2.png"],
   },
   robots: {
     index: true,
